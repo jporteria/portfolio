@@ -77,7 +77,16 @@ body{
     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
 }
 .hide{
-    display: none;
+    opacity: 0;
+    transition: all .5s;
+}
+.sections{
+    opacity: 0;
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    transition: all 1s;
 }
 /* display burger icon and hide menu,
     code below will only work on mobile view*/
@@ -88,7 +97,7 @@ body{
     .menu{
         display: none;
     }
-    .mobile--menu.show{
+    .mobile--menu{
         display: flex;
         flex-direction: column;
         text-decoration: none;
@@ -98,7 +107,7 @@ body{
         width: 100%;
         height: auto;
         z-index: 1;
-        transition: all 5s;
+        transition: all 1s;
     }
     .mobile--menu div{
         background-color: rgba(35, 22, 84, 0.5);
@@ -132,6 +141,19 @@ body{
     background-image: url('../files/6099605.jpg');
     background-size: cover;
     background-position: center;
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* about component css below */
+
+.about--section{
+    background-image: url('../files/wavy_background_1.jpg');
+    background-size: cover;
     display: flex;
     position: relative;
     width: 100vw;
