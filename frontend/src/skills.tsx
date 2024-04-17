@@ -14,7 +14,7 @@ export default function Skills() {
 
   return (
     <div className='skills--section' ref={ref}>
-      <h1 className={inView ? 'sections show' : 'sections'}>skills</h1>
+      <h1 className={inView ? 'sections showHidden' : 'sections'}>list of skills</h1>
     </div>
   )
 }
