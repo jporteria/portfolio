@@ -25,7 +25,8 @@ export default function Header() {
             <div className={burgerVisible}></div>
           </div>
           <nav className={menuVisible}>
-              <li>About</li>
+              <li>Home</li>
+              <li>About Me</li>
               <li>Contacts</li>
               <li>Projects</li>
               <li>Skills</li>

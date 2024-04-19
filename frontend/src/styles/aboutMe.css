@@ -1,0 +1,24 @@
+.aboutMe--section{
+    background-image: url('../files/sep09.jpg');
+    /* background-color: rgb(172, 172, 199); */
+    background-position: center;
+    background-size: cover;
+    /* border: 5px solid #0073e6; */
+    border-radius: 20px;
+    display: flex;
+    position: relative;
+    width: 90vw;
+    height: 100vh;
+    /* align-items: center; */
+    justify-content: center;
+}
+.summary{
+    border-radius: 5px;
+    /* background-color: #16191c; */
+    display: flex;
+    padding: 30px;
+    margin-top: 100px;
+    width: 80%;
+    height: fit-content;
+    font-size: 20px;
+}
