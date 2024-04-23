@@ -8,7 +8,7 @@
     justify-content: center;
     column-gap: 50px;
 }
-.aboutMe{
+.home--text{
     /* font-weight: bold; */
     font-size: 40px;
     height: auto;
@@ -16,13 +16,13 @@
     color: #415ed1;
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
 }
-.aboutMe--name{
+.name{
     font-weight: bold;
     font-size: 70px;
     height: auto;
     width: auto;
 }
-.myPhoto{
+.homePhotoContainer{
     height: 100vh;
     width: auto;
     display: flex;
@@ -31,7 +31,53 @@
         drop-shadow(0 0 100px rgb(61, 96, 187)) 
         drop-shadow(0 0 5px rgb(230, 231, 234))
 }
-.photo{
+.homePhoto{
     height: 700px;
     width: 700px;
+}
+@media screen and (max-width: 600px){
+    .home--section{
+        background: none;
+        display: flex;
+        position: relative;
+        width: 90vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        /* border: 1px solid red; */
+    }
+    .home--text{
+        /* font-weight: bold; */
+        font-size: 30px;
+        height: auto;
+        width: 100%;
+        /* border: 1px solid red; */
+        position: absolute;
+        align-items: center;
+        z-index: 2;
+        bottom: 50px;
+        color: #415ed1;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+    }
+    .name{
+        font-weight: bold;
+        font-size: 70px;
+        height: auto;
+        width: auto;
+    }
+    .homePhotoContainer{
+        height: auto;
+        width: auto;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        filter: 
+            drop-shadow(0 0 100px rgb(61, 96, 187)) 
+            drop-shadow(0 0 5px rgb(230, 231, 234))
+    }
+    .homePhoto{
+        height: 500px;
+        width: 500px;
+    }
 }

@@ -1,24 +1,37 @@
 .aboutMe--section{
-    background-image: url('../files/sep09.jpg');
-    /* background-color: rgb(172, 172, 199); */
+    /* background-image: url('../files/sep09.jpg'); */
+    background-color: #0073e6;
     background-position: center;
     background-size: cover;
     /* border: 5px solid #0073e6; */
-    border-radius: 20px;
     display: flex;
     position: relative;
-    width: 90vw;
-    height: 100vh;
+    width: 100vw;
+    height: auto;
     /* align-items: center; */
     justify-content: center;
 }
 .summary{
     border-radius: 5px;
     /* background-color: #16191c; */
+    /* border: 1px solid red; */
     display: flex;
-    padding: 30px;
-    margin-top: 100px;
+    align-items: center;
+    column-gap: 40px;
+    /* padding: 30px; */
+    margin: 50px;
     width: 80%;
     height: fit-content;
     font-size: 20px;
+}
+.aboutMePhotoContainer{
+    height: 300px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+.aboutMePhoto{
+    height: 100%;
 }

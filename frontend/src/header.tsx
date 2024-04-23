@@ -15,9 +15,9 @@ export default function Header() {
   }
 
   return (
-    <div>
+    <div className="header">
           <div className="logo">
-              Porteria
+              logo
           </div>
           <div className='burger--menu' onClick={() => showMenu()}>
             <div className={burgerVisible}></div>
