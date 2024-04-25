@@ -5,9 +5,12 @@ import './styles/app.css'
 import './styles/home.css'
 import './styles/aboutMe.css'
 import './styles/skills.css'
+import './styles/projects.css'
+import './styles/contactMe.css'
 import ParticlesComponent from './components/particles'
-import Attributes from './components/Attributes'
 import Skills from './components/skills'
+import Projects from './components/projects'
+import ContactMe from './components/contactMe'
 
 export default function App() {
 
@@ -18,6 +21,8 @@ export default function App() {
       <Home />
       <AboutMe />
       <Skills />
+      <Projects />
+      <ContactMe />
     </div>
   )
 }

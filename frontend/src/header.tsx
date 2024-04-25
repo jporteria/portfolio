@@ -27,9 +27,8 @@ export default function Header() {
           <nav className={menuVisible}>
               <li>Home</li>
               <li>About Me</li>
-              <li>Contacts</li>
               <li>Projects</li>
-              <li>Skills</li>
+              <li>Contacts</li>
           </nav>
 
       {/* <nav className={menuVisible}>

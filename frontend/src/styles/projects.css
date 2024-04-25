@@ -1,0 +1,7 @@
+.projects--section{
+    border: 1px solid red;
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
