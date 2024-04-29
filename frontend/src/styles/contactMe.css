@@ -11,7 +11,18 @@
     align-items: center;
 }
 .contactMe--socials{
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    width: auto;
+    height: auto;
+    display: flex;
+    column-gap: 10px;
+}
+.socialBox{
+    /* border: 1px solid green; */
+}
+.socialIcon{
+    height: 30px;
+    width: 30px;
 }
 .contactMe--form{
     margin-top: 20px;
