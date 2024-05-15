@@ -3,25 +3,23 @@
     background-color: #0073e6;
     background-position: center;
     background-size: cover;
-    /* border: 5px solid #0073e6; */
     display: flex;
     position: relative;
     width: 100vw;
     height: auto;
-    /* align-items: center; */
     justify-content: center;
+    column-gap: 60px;
+    padding: 40px;
 }
 .summary{
     border-radius: 5px;
-    /* background-color: #16191c; */
     /* border: 1px solid red; */
     display: flex;
+    flex-direction: column;
     align-items: center;
-    column-gap: 40px;
-    /* padding: 30px; */
-    margin: 50px;
+    justify-content: center;
     width: 80%;
-    height: fit-content;
+    height: 300px;
     font-size: 20px;
 }
 .aboutMePhotoContainer{
@@ -34,4 +32,8 @@
 }
 .aboutMePhoto{
     height: 100%;
+}
+.more{
+    height: 40px;
+    margin-top: 10px;
 }
