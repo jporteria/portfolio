@@ -42,7 +42,7 @@ export default function ContactMe() {
         <input className='contactMe--name' type="text" placeholder='Name/Organization' />
         <input className='contactMe--email' type="email" placeholder='Email'/>
         <input className='contactMe--message' type="text" placeholder='Message'/>
-        <button className='submit'>Send</button>
+        <button className='submit'>Send <img src="../src/files/send.png" alt="" height='100%' /></button>
       </div>
     </div>
   )

@@ -9,7 +9,7 @@
     height: auto;
     justify-content: center;
     column-gap: 60px;
-    padding: 40px;
+    padding: 40px 100px;
 }
 .summary{
     border-radius: 5px;
@@ -35,5 +35,9 @@
 }
 .more{
     height: 40px;
+    width: 120px;
     margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
 }

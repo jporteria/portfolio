@@ -11,8 +11,16 @@ import ParticlesComponent from './components/particles'
 import Skills from './components/skills'
 import Projects from './components/projects'
 import ContactMe from './components/contactMe'
+// import { useInView } from 'react-intersection-observer'
 
 export default function App() {
+
+  // const { ref, inView, entry } = useInView({
+  //   threshold: 0.5
+  // })
+  // if(entry?.isIntersecting){
+  //   console.log('home page showing')
+  // }
 
   return (
     <div id='app'>

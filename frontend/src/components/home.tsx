@@ -1,6 +1,17 @@
-import React from 'react'
+// import React from 'react'
+// import { useInView } from 'react-intersection-observer'
 
 export default function Home() {
+
+  // const { ref, inView, entry } = useInView({
+  //   threshold: 1
+  // })
+  // const headerChangeClass = document.getElementById('header')
+  // if(entry?.isIntersecting){
+  //   headerChangeClass?.classList.add('headerScroll')
+  // }else{
+  //   headerChangeClass?.classList.add('header')
+  // }
 
   return (
     <div className='home--section'>

@@ -1,49 +1,61 @@
 .skills--section{
-    /* background-color: red; */
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
-    row-gap: 50px;
+    column-gap: 100px;
     position: relative;
     width: 90vw;
-    height: 500px;
+    height: auto;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
+    /* padding: 50px 0; */
+    margin: 100px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    /* border: 1px solid red; */
+}
+.skills--array{
+    display: flex;
+    /* flex-direction: row; */
+    column-gap: 100px;
+    position: relative;
+    width: 90vw;
+    height: auto;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 50px 0;
+    margin: 50px 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }to{
+        transform: translateX(-100%);
+    }
 }
 .skills{
     /* border: 1px solid red; */
     height: auto;
     width: auto;
     display: flex;
-    justify-content: center;
-    column-gap: 50px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
+    column-gap: 100px;
+    animation: 20s slide infinite linear;
 }
-.skillBox{
+.skills--array:hover .skills{
+    animation-play-state: paused;
+}
+.skills > div{
     display: flex;
     flex-direction: column;
     align-items: center;
-    opacity: 0;
-    transform: translateX(-500px);
-    transition: all 1s;
-}
-.showSkills{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* animation: slideShow ease-in; */
-    opacity: 1;
-    transform: translateX(0);
-    transition: all 1s;
 }
 .skills > div > img{
     height: 80px;
     width: auto;
 }
 
-.showSkills:nth-child(2){
+/* .showSkills:nth-child(2){
     transition-delay: .4s;
 }
 .showSkills:nth-child(3){
@@ -66,4 +78,4 @@
 }
 .showSkills:nth-child(9){
     transition-delay: 1.1s;
-}
+} */

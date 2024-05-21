@@ -5,7 +5,7 @@
     position: absolute;
     background-color: #1f1d1d;
     color: white;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+    /* text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6; */
     padding: 0;
     margin: 0;
     width: 100%;
@@ -16,12 +16,53 @@
     align-items: center;
     justify-content: center;
 }
+h1{
+    color: blue;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+}
+.header{
+    background-color: rgb(20, 20, 20);
+    height: 80px;
+    width: 100vw;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    transition: all ease .1s;
+    font-weight: bold;
+    /* text-shadow: 0 0 5px blue; */
+    text-shadow: 0 0 5px #0073e6, 0 0 10px #0073e6, 0 0 15px #fff, 0 0 20px #fff;
+
+}
+.header.active{
+    background-color: rgb(209, 209, 209);
+    height: 70px;
+    width: 95vw;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin-top: 20px;
+    border-radius: 50px;
+    transition: all ease .2s;
+    color: blue;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6;
+}
 .logo{
     border: 1px solid red;
-    position: fixed;
-    margin-top: 30px;
+    /* position: relative; */
+    /* margin-top: 30px; */
+    width: 100px;
+    height: 50px;
     left: 40px;
-    z-index: 1;
 }
 .menu{
     display: flex;
@@ -29,14 +70,13 @@
     text-decoration: none;
     list-style-type: none;
     column-gap: 30px;
-    position: fixed;
+    /* position: relative; */
     right: 40px;
-    margin-top: 30px;
-    z-index: 1;
+    /* margin-top: 30px; */
+    /* z-index: 1; */
     font-size: 20px;
     /* font-weight: bold; */
-    color: #415ed1;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+    cursor: pointer;
 }
 .menu li:hover{
     /* text-shadow:
@@ -57,6 +97,10 @@
     code below will only work on mobile view*/
 
 @media screen and (max-width: 600px){
+    
+    .header--menu{
+        border: 1px solid red;
+    }
 
     .burger--menu{
         height: 2em;
@@ -66,11 +110,11 @@
         align-items: flex-start;
         justify-content: space-between;
         cursor: pointer;
-        position: absolute;
-        margin-top: 25px;
-        right: 30px;
-        position: fixed;
-        z-index: 1;
+        /* position: absolute; */
+        /* margin-top: 25px; */
+        right: 20px;
+        /* position: fixed; */
+        /* z-index: 1; */
     }
     .burger--bar{
         width: 100%;
@@ -112,12 +156,12 @@
         row-gap: 10px;
         text-decoration: none;
         list-style-type: none;
-        position: fixed;
+        /* position: fixed; */
         margin-top: 70px;
         right: 0;
         width: 100%;
         height: auto;
-        z-index: 1;
+        /* z-index: 1; */
     }
 
     /* menu slide effect */

@@ -3,6 +3,7 @@ import { useState } from "react"
 export default function Header() {
   const [menuVisible, setMenuVisible] = useState('menu hide')
   const [burgerVisible, setBurgerVisible] = useState('burger--bar unclicked')
+  const [header, setHeader] = useState(false)
 
   function showMenu(){
     if(burgerVisible === 'burger--bar unclicked'){
@@ -14,22 +15,34 @@ export default function Header() {
     }
   }
 
+  function changeHeader(){
+    if(window.scrollY > 0){
+      setHeader(true)
+    }else{
+      setHeader(false)
+    }
+  }
+
+  window.addEventListener('scroll', changeHeader)
+
   return (
-    <div className="header">
+    <div id="header" className={header ? 'header active' : 'header'}>
           <div className="logo">
               logo
           </div>
-          <div className='burger--menu' onClick={() => showMenu()}>
-            <div className={burgerVisible}></div>
-            <div className={burgerVisible}></div>
-            <div className={burgerVisible}></div>
+          <div className="header--menu">
+            <div className='burger--menu' onClick={() => showMenu()}>
+              <div className={burgerVisible}></div>
+              <div className={burgerVisible}></div>
+              <div className={burgerVisible}></div>
+            </div>
+            <nav className={menuVisible}>
+                <li>Home</li>
+                <li>About Me</li>
+                <li>Projects</li>
+                <li>Contacts</li>
+            </nav>
           </div>
-          <nav className={menuVisible}>
-              <li>Home</li>
-              <li>About Me</li>
-              <li>Projects</li>
-              <li>Contacts</li>
-          </nav>
 
       {/* <nav className={menuVisible}>
           <div>About</div>

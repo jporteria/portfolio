@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import { useInView } from 'react-intersection-observer'
 
 export default function AboutMe() {
@@ -7,10 +7,10 @@ export default function AboutMe() {
     threshold: 0.5
   })
   // const hiddenElements = document.querySelectorAll('sections')
-  console.log(entry)
-  if(entry?.isIntersecting){
-    console.log('hello')
-  }
+  // console.log(entry)
+  // if(entry?.isIntersecting){
+  //   console.log('hello')
+  // }
 
   return (
     <div className='aboutMe--section' ref={ref}>
