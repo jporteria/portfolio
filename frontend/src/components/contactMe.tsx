@@ -1,8 +1,8 @@
-import React from 'react'
 
 export default function ContactMe() {
+  
   return (
-    <div className='contactMe--section'>
+    <section className='contactMe--section' id='contactMe--section'>
       {/* <h1>Contact Me</h1> */}
       <div className="contactMe--info">
         {/* <div> */}
@@ -44,6 +44,6 @@ export default function ContactMe() {
         <input className='contactMe--message' type="text" placeholder='Message'/>
         <button className='submit'>Send <img src="../src/files/send.png" alt="" height='100%' /></button>
       </div>
-    </div>
+    </section>
   )
 }

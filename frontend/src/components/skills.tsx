@@ -13,8 +13,8 @@ export default function Skills() {
   // }
 
   return (
-    <div className='skills--section'>
-      <h1>Skills</h1>
+    <div className='skills--section' id="skills--section">
+      {/* <h1>Skills</h1> */}
       <div className="skills--array">
         <div className='skills'>
           <div>

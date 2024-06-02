@@ -1,0 +1,21 @@
+.moreAboutMe--box{
+    background-color: white;
+    height: 90vh;
+    width: 60vw;
+    z-index: 1;
+    position: fixed;
+    top: 5vh;
+    display: flex;
+}
+.hideMoreAboutMe--box{
+    display: none;
+}
+.moreAboutMe--close{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 0;
+    margin: 10px;
+    border: none;
+    background: none;
+}

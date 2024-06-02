@@ -1,19 +1,30 @@
 .aboutMe--section{
     /* background-image: url('../files/sep09.jpg'); */
-    background-color: #0073e6;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px;
+}
+.aboutMe{
     background-position: center;
+    /* border: 1px solid white; */
     background-size: cover;
     display: flex;
     position: relative;
-    width: 100vw;
+    width: 90vw;
     height: auto;
     justify-content: center;
     column-gap: 60px;
-    padding: 40px 100px;
+    padding: 0 100px;
 }
 .summary{
     border-radius: 5px;
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,4 +51,60 @@
     border: none;
     border-radius: 20px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 900px){
+    .aboutMe--section{
+        /* background-image: url('../files/sep09.jpg'); */
+        background-color: rgb(20, 20, 20);
+        display: flex;
+        flex-direction: column;
+        row-gap: 0;
+        position: relative;
+        width: 100vw;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutMe{
+        background-position: center;
+        /* border: 1px solid white; */
+        background-size: cover;
+        display: flex;
+        position: relative;
+        width: 90vw;
+        height: auto;
+        justify-content: center;
+        column-gap: 60px;
+        padding: 0;
+    }
+    .summary{
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        height: auto;
+        font-size: 20px;
+    }
+    .aboutMePhotoContainer{
+        height: 300px;
+        width: 250px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    }
+    .aboutMePhoto{
+        height: 100%;
+    }
+    .more{
+        height: 40px;
+        width: 120px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+    }
 }

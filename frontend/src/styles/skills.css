@@ -6,9 +6,6 @@
     width: 90vw;
     height: auto;
     align-items: center;
-    /* justify-content: center; */
-    /* padding: 50px 0; */
-    margin: 100px 0;
     overflow: hidden;
     white-space: nowrap;
     /* border: 1px solid red; */
@@ -55,27 +52,60 @@
     width: auto;
 }
 
-/* .showSkills:nth-child(2){
-    transition-delay: .4s;
+
+@media screen and (max-width: 900px){
+    .skills--section{
+        display: flex;
+        flex-direction: column;
+        column-gap: 50px;
+        position: relative;
+        width: 90vw;
+        height: auto;
+        align-items: center;
+        overflow: hidden;
+        white-space: nowrap;
+        /* border: 1px solid red; */
+    }
+    .skills--array{
+        display: flex;
+        /* flex-direction: row; */
+        column-gap: 50px;
+        position: relative;
+        width: 90vw;
+        height: auto;
+        align-items: center;
+        /* justify-content: center; */
+        padding: 50px 0;
+        margin: 50px 0;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    @keyframes slide {
+        from{
+            transform: translateX(0);
+        }to{
+            transform: translateX(-100%);
+        }
+    }
+    .skills{
+        /* border: 1px solid red; */
+        height: auto;
+        width: auto;
+        display: flex;
+        column-gap: 50px;
+        animation: 20s slide infinite linear;
+    }
+    .skills--array:hover .skills{
+        animation-play-state: paused;
+    }
+    .skills > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills > div > img{
+        height: 80px;
+        width: auto;
+    }    
 }
-.showSkills:nth-child(3){
-    transition-delay: .5s;
-}
-.showSkills:nth-child(4){
-    transition-delay: .6s;
-}
-.showSkills:nth-child(5){
-    transition-delay: .7s;
-}
-.showSkills:nth-child(6){
-    transition-delay: .8s;
-}
-.showSkills:nth-child(7){
-    transition-delay: .9s;
-}
-.showSkills:nth-child(8){
-    transition-delay: 1s;
-}
-.showSkills:nth-child(9){
-    transition-delay: 1.1s;
-} */
+
