@@ -26,7 +26,7 @@ export default function ContactMe() {
           </div>
         {/* </div> */}
         <div className='contactMe--socials'>
-          <div className='socialBox'>
+          <div className='socialBox' onClick={() => window.open('https://www.facebook.com/curlytopszxc', 'fb')}>
             <img className='socialIcon' src="../src/files/facebook.png" alt="" />
           </div>
           <div className='socialBox'>
@@ -40,8 +40,9 @@ export default function ContactMe() {
       <div className='contactMe--form'>
         <p>Leave a message</p>
         <input className='contactMe--name' type="text" placeholder='Name/Organization' />
-        <input className='contactMe--email' type="email" placeholder='Email'/>
-        <input className='contactMe--message' type="text" placeholder='Message'/>
+        <input className='contactMe--email' type="email" placeholder='Email Address'/>
+        <input className='contactMe--subject' type="text" placeholder='Subject'/>
+        <textarea className='contactMe--message' placeholder='Message'/>
         <button className='submit'>Send <img src="../src/files/send.png" alt="" height='100%' /></button>
       </div>
     </section>

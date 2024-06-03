@@ -1,15 +1,16 @@
 .aboutMe--section{
     /* background-image: url('../files/sep09.jpg'); */
-    background-color: rgb(20, 20, 20);
+    background-color: var(--secondary);
     display: flex;
     flex-direction: column;
     row-gap: 50px;
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     justify-content: center;
     align-items: center;
-    padding: 50px 100px;
+    padding: 100px;
+    color: var(--white);
 }
 .aboutMe{
     background-position: center;
@@ -51,6 +52,9 @@
     border: none;
     border-radius: 20px;
     cursor: pointer;
+    background: none;
+    border: 2px solid var(--white);
+    color: var(--white);
 }
 
 @media screen and (max-width: 900px){

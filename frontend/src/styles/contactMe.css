@@ -1,21 +1,22 @@
 .contactMe--section{
-    background-color: rgb(20, 20, 20);
-    margin-top: 200px;
+    background-color: var(--secondary);
+    margin-top: 150px;
     width: 100vw;
     height: 500px;
     display: flex;
     flex-direction: row;
     position: relative;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     column-gap: 50px;
+    padding-top: 50px;
 }
 .contactMe--info{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 500px;
-    height: 300px;
+    height: auto;
     /* border: 1px solid white; */
 }
 .contactMe--info > h1{
@@ -46,7 +47,7 @@
     height: auto;
     display: flex;
     column-gap: 10px;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 .socialBox{
     /* border: 1px solid green; */
@@ -64,7 +65,7 @@
     flex-direction: column;
     align-items: center;
     width: 500px;
-    height: 300px;
+    height: auto;
     /* row-gap: 20px; */
 }
 .contactMe--form > p{
@@ -81,20 +82,29 @@
     height: 30px;
     width: 100%;
 }
+.contactMe--subject{
+    height: 30px;
+    width: 100%;
+}
 .contactMe--message{
     height: 100px;
     width: 100%;
 }
 .submit{
-    height: 30px;
-    width: 200px;
-    border-radius: 5px;
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
     border: none;
     padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 5px;
+    margin-top: 20px;
+    /* box-shadow: -5px 5px var(--skyblue); */
+    background: none;
+    border: 2px solid var(--white);
+    color: var(--white);
 }
 
 
@@ -180,6 +190,10 @@
         width: 100%;
     }
     .contactMe--email{
+        height: 30px;
+        width: 100%;
+    }
+    .contactMe--subject{
         height: 30px;
         width: 100%;
     }
