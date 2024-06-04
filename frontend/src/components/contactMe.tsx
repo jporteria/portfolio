@@ -1,6 +1,34 @@
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2'
+
 
 export default function ContactMe() {
   
+  const form = useRef<any>();
+
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_sx1siwe', 'template_pjrsr2d', form.current, {
+        publicKey: 'a2g3vtTrcijsE2TUT',
+      })
+      .then(
+        () => {
+          Swal.fire({
+            title: "Message Sent!",
+            text: "I will get back to you as soon as possible",
+            icon: "success"
+          });
+          form.current.reset()
+        },
+        (error) => {
+          alert('FAILED...'+ error);
+        },
+      );
+  };
+
   return (
     <section className='contactMe--section' id='contactMe--section'>
       {/* <h1>Contact Me</h1> */}
@@ -37,14 +65,14 @@ export default function ContactMe() {
           </div>
         </div>
       </div>
-      <div className='contactMe--form'>
+      <form className='contactMe--form' ref={form} onSubmit={sendEmail}>
         <p>Leave a message</p>
-        <input className='contactMe--name' type="text" placeholder='Name/Organization' />
-        <input className='contactMe--email' type="email" placeholder='Email Address'/>
-        <input className='contactMe--subject' type="text" placeholder='Subject'/>
-        <textarea className='contactMe--message' placeholder='Message'/>
+        <input className='contactMe--name' name='contactMe--name' type="text" placeholder='Name/Organization' required/>
+        <input className='contactMe--email' name='contactMe--email' type="email" placeholder='Email Address' required/>
+        <input className='contactMe--subject' name='contactMe--subject' type="text" placeholder='Subject' required/>
+        <textarea className='contactMe--message' name='contactMe--message' placeholder='Message' required/>
         <button className='submit'>Send <img src="../src/files/send.png" alt="" height='100%' /></button>
-      </div>
+      </form>
     </section>
   )
 }
