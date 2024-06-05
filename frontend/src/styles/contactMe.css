@@ -55,8 +55,7 @@
 .socialIcon{
     height: 30px;
     width: 30px;
-    background-color: white;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 .contactMe--form{
     /* border: 1px solid white; */

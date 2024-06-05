@@ -53,7 +53,9 @@ export default function Header() {
   return (
     <div id="header" className={header ? 'header active' : 'header'}>
           <div className="logo">
+            <a href="#">
               <h1 className="JPorteria">JPorteria.Dev</h1>
+            </a>
           </div>
           <div className="header--menu">
             <div className="burger--menu" onClick={() => showMenu()}>

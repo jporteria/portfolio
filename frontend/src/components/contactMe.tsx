@@ -55,13 +55,13 @@ export default function ContactMe() {
         {/* </div> */}
         <div className='contactMe--socials'>
           <div className='socialBox' onClick={() => window.open('https://www.facebook.com/curlytopszxc', 'fb')}>
-            <img className='socialIcon' src="../src/files/facebook.png" alt="" />
+            <img className='socialIcon' src="https://drive.google.com/thumbnail?id=1s7p9jof3g20Nz294bzduYnsjmeapbFNH&sz=w1000" alt="fb icon" />
           </div>
-          <div className='socialBox'>
-            <img className='socialIcon' src="../src/files/linkedin.png" alt="" />
+          <div className='socialBox' onClick={() => window.open('https://www.instagram.com/jessporteria_/', 'li')}>
+            <img className='socialIcon' src="https://drive.google.com/thumbnail?id=1d14UJ3ipouEqya0N0kf9DTEgIj75YNDl&sz=w1000" alt="ig icon" />
           </div>
-          <div className='socialBox'>
-            <img className='socialIcon' src="../src/files/instagram.png" alt="" />
+          <div className='socialBox' onClick={() => window.open('https://www.linkedin.com/in/jessie-porteria', 'li')}>
+            <img className='socialIcon' src="https://drive.google.com/thumbnail?id=1sgv3lIhLmHA0LBHW_X1V5GeV14BAUfjY&sz=w1000" alt="linkedin icon" />
           </div>
         </div>
       </div>

@@ -10,7 +10,7 @@ export default function Projects() {
           <h2 className='project--title'>NetPlease</h2>
           <div className="project--buttons">
             <button onClick={() => window.open('https://netplease.onrender.com/', 'NetPlease')}>Go Live</button>
-            <button onClick={() => window.open('https://netplease.onrender.com/', 'NetPlease')}>View on Github</button>
+            <button onClick={() => window.open('https://github.com/wagako3/netplease', 'NetPlease')}>View on Github</button>
           </div>
           <p>
             NetPlease is a movie rating website aimed at providing users with a platform to discover, rate, and review movies. This project is created using MERN stack and movie API from TMDb. This website is still in the development phase and does not have a responsive design yet.
