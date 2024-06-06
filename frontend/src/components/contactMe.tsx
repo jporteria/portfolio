@@ -1,14 +1,18 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2'
+import { useInView } from 'react-intersection-observer'
 
 
 export default function ContactMe() {
   
+  const [buttonDisabled, setButtonDisabled] = useState(false)
+
   const form = useRef<any>();
 
   const sendEmail = (e: any) => {
     e.preventDefault();
+    setButtonDisabled(true)
 
     emailjs
       .sendForm('service_sx1siwe', 'template_pjrsr2d', form.current, {
@@ -21,18 +25,24 @@ export default function ContactMe() {
             text: "I will get back to you as soon as possible",
             icon: "success"
           });
+          setButtonDisabled(false)
           form.current.reset()
         },
         (error) => {
           alert('FAILED...'+ error);
+          // setButton()
         },
       );
   };
 
+  const { ref, inView, entry } = useInView({
+      threshold: 0.3
+  })
+
   return (
-    <section className='contactMe--section' id='contactMe--section'>
+    <section className='contactMe--section' id='contactMe--section' ref={ref}>
       {/* <h1>Contact Me</h1> */}
-      <div className="contactMe--info">
+      <div className={inView ? 'contactMe--info showHidden' : 'contactMe--info hidden'}>
         {/* <div> */}
           <h1>Contact Me</h1>
           <p>
@@ -53,7 +63,7 @@ export default function ContactMe() {
             </div>
           </div>
         {/* </div> */}
-        <div className='contactMe--socials'>
+        <div className={inView ? 'contactMe--socials showHidden' : 'contactMe--socials hidden'}>
           <div className='socialBox' onClick={() => window.open('https://www.facebook.com/curlytopszxc', 'fb')}>
             <img className='socialIcon' src="https://drive.google.com/thumbnail?id=1s7p9jof3g20Nz294bzduYnsjmeapbFNH&sz=w1000" alt="fb icon" />
           </div>
@@ -65,13 +75,13 @@ export default function ContactMe() {
           </div>
         </div>
       </div>
-      <form className='contactMe--form' ref={form} onSubmit={sendEmail}>
+      <form className={inView ? 'contactMe--form showHidden' : 'contactMe--form hidden'} ref={form} onSubmit={sendEmail}>
         <p>Leave a message</p>
         <input className='contactMe--name' name='contactMe--name' type="text" placeholder='Name/Organization' required/>
         <input className='contactMe--email' name='contactMe--email' type="email" placeholder='Email Address' required/>
         <input className='contactMe--subject' name='contactMe--subject' type="text" placeholder='Subject' required/>
         <textarea className='contactMe--message' name='contactMe--message' placeholder='Message' required/>
-        <button className='submit'>Send <img src="../src/files/send.png" alt="" height='100%' /></button>
+        <button className={buttonDisabled ? 'buttonDisabled' : 'buttonEnabled'}>Send <img src="../src/files/send.png" alt="" height='100%' /></button>
       </form>
     </section>
   )

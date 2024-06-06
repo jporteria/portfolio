@@ -70,8 +70,10 @@
 .contactMe--form > p{
     width: 100%;
 }
-.contactMe--form > input{
+.contactMe--form > input, textarea{
     margin-bottom: 10px;
+    outline: none;
+    font-family: "Oxanium", sans-serif;
 }
 .contactMe--name{
     height: 30px;
@@ -89,7 +91,7 @@
     height: 100px;
     width: 100%;
 }
-.submit{
+.buttonEnabled{
     height: 40px;
     width: 120px;
     border-radius: 20px;
@@ -104,12 +106,30 @@
     background: none;
     border: 2px solid var(--white);
     color: var(--white);
+    cursor: pointer;
+}
+.buttonDisabled{
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    border: none;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    margin-top: 20px;
+    /* box-shadow: -5px 5px var(--skyblue); */
+    background: none;
+    border: 2px solid var(--white);
+    color: var(--white);
+    cursor: not-allowed;
 }
 
 
 @media screen and (max-width: 900px){
     .contactMe--section{
-        background-color: rgb(20, 20, 20);
+        background-color: var(--secondary);
         margin-top: 0;
         padding: 100px 0;
         width: 100vw;
@@ -165,7 +185,7 @@
     .socialIcon{
         height: 30px;
         width: 30px;
-        background-color: white;
+        /* background-color: white; */
         border-radius: 5px;
     }
     .contactMe--form{
@@ -174,7 +194,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 90vw;
+        width: 80vw;
         height: 300px;
         /* row-gap: 20px; */
     }
