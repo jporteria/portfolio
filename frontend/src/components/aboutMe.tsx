@@ -5,9 +5,9 @@ import { Context } from '../app'
 
 export default function AboutMe() {
 
-  const { aboutBox, setAboutBox } = useContext(Context)
+  const { setAboutBox } = useContext(Context)
 
-  const { ref, inView, entry } = useInView({
+  const { ref, inView } = useInView({
       threshold: 0.3
   })
   

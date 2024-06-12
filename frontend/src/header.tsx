@@ -1,5 +1,5 @@
-import { useContext, useState } from "react"
-import { Context } from "./app"
+import { useState } from "react"
+// import { Context } from "./app"
 
 export default function Header() {
   const [menuVisible, setMenuVisible] = useState('menu hide')

@@ -9,7 +9,7 @@ import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSl
 
 const ParticlesComponent = (props: { id: any; }) => {
 
-  const [init, setInit] = useState(false);
+  const [, setInit] = useState(false);
   // this should be run only once per application lifetime
   useEffect(() => {
     initParticlesEngine(async (engine: any) => {
@@ -25,12 +25,10 @@ const ParticlesComponent = (props: { id: any; }) => {
     });
   }, []);
 
-  const particlesLoaded = (container: any) => {
-    console.log(container);
-  };
 
 
-  const options = useMemo(
+
+  return <Particles id={props.id} options={useMemo(
     () => ({
       background: {
         color: {
@@ -87,7 +85,7 @@ const ParticlesComponent = (props: { id: any; }) => {
           value: 200,
         },
         opacity: {
-          value: 1.0,
+          value: 1,
         },
         shape: {
           type: "circle",
@@ -98,11 +96,8 @@ const ParticlesComponent = (props: { id: any; }) => {
       },
       detectRetina: true,
     }),
-    [],
-  );
-
-
-  return <Particles id={props.id} init={particlesLoaded} options={options} />; 
+    []
+  )} />; 
 };
 
 export default ParticlesComponent;

@@ -8,10 +8,10 @@
     align-items: center;
     overflow: hidden;
     white-space: nowrap;
-    /* border: 1px solid red; */
+    border: 1px solid var(--secondary);
 }
 .skills--array{
-    /* border: 1px solid red; */
+    /* border: 5px solid var(--secondary); */
     display: flex;
     /* flex-direction: row; */
     column-gap: 100px;

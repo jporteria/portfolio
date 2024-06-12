@@ -152,9 +152,11 @@ a:hover{
     }
     .header{
         padding: 0 30px;
+        color: var(--secondary);
     }
     .header.active{
         padding: 0 30px;
+        color: var(--secondary);
     }
     .logo{
         z-index: 5;
@@ -167,8 +169,22 @@ a:hover{
         align-items: flex-start;
         justify-content: space-between;
         cursor: pointer;
-        position: absolute;
-        right: 20px;
+        position: fixed;
+        right: 30px;
+        top: 25px;
+        /* border: 1px solid white; */
+    }
+    .header.active .burger--menu{
+        height: 2em;
+        width: 3em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        cursor: pointer;
+        position: fixed;
+        right: 30px;
+        top: 40px;
         /* border: 1px solid white; */
     }
     .menu{
@@ -183,7 +199,7 @@ a:hover{
         width: 100%;
         height: auto;
         /* border: 1px solid white; */
-        background-color: var(--secondary);
+        /* background-color: var(--secondary); */
     }
     .menu a{
         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
@@ -217,13 +233,16 @@ a:hover{
         transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
     }
     .hide{
-        animation: slideHide .3s ease-in;
+        animation: slideHide .3s ease-out;
         transition: all .3s;
-        opacity: 0;
+        /* opacity: 0; */
+        display: none;
+        
     }
     .show{
         animation: slideShow .3s ease-in;
-        opacity: 1;
+        /* opacity: 1; */
+        display: inherit;
     }
     
 
