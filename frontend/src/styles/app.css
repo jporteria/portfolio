@@ -32,7 +32,7 @@ h1{
 .header{
     /* background-color: rgb(20, 20, 20); */
     height: 80px;
-    width: 100%;
+    width: 100vw;
     z-index: 2;
     position: fixed;
     top: 0;
@@ -86,7 +86,8 @@ h1{
     list-style-type: none;
     column-gap: 30px;
     /* position: relative; */
-    right: 40px;
+    /* right: 40px;
+    left: 40px; */
     /* margin-top: 30px; */
     /* z-index: 1; */
     font-size: 20px;
@@ -144,10 +145,10 @@ a:hover{
         display: flex;
         flex-direction: column;
         position: absolute;
-        width: 100vw;
+        width: 100%;
         height: auto;
-        margin-top: 250px;
-        right: 10px;
+        margin-top: 270px;
+        right: 0;
     }
     .header{
         padding: 0 30px;
@@ -177,16 +178,18 @@ a:hover{
         row-gap: 10px;
         text-decoration: none;
         list-style-type: none;
-        margin-top: 70px;
-        right: 0;
+        margin-top: 50px;
+        padding: 20px 0;
         width: 100%;
         height: auto;
         /* border: 1px solid white; */
-        /* background-color: var(--secondary); */
+        background-color: var(--secondary);
     }
     .menu a{
-        color: var(--secondary);
         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+    }
+    a::after{
+        background-color: var(--white);
     }
     .burger--bar{
         width: 100%;

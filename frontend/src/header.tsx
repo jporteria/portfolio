@@ -59,11 +59,11 @@ export default function Header() {
           </div>
           <div className="header--menu">
             <div className="burger--menu" onClick={() => showMenu()}>
-              <div className={burgerVisible}></div>
+              <div className={burgerVisible}></div>{/* className = burger--bar unclicked or burger--bar clicked*/}
               <div className={burgerVisible}></div>
               <div className={burgerVisible}></div>
             </div>
-            <div className={menuVisible}>
+            <div className={menuVisible}>{/* className = menu hide or menu show*/}
                 <a href="#home">Home</a>
                 <a href="#aboutMe--section">About Me</a>
                 <a href="#projects--section">Projects</a>
