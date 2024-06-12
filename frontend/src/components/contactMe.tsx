@@ -50,15 +50,15 @@ export default function ContactMe() {
           </p>
           <div className='contactMe--pii'>
             <div className="phone">
-              <img className='contactMe--icons' src="../src/files/contacts/phone.png" height='20px' alt="phone icon" />
+              <img className='contactMe--icons' src="https://drive.google.com/thumbnail?id=1phhJcwAnj02xxvJNEwpky3_espZhDols&sz=w1000" height='20px' alt="phone icon" />
               <p>+63 946-581-3090</p>
             </div>
             <div className="email">
-              <img className='contactMe--icons' src="../src/files/contacts/email.png" height='20px' alt="email icon" />
+              <img className='contactMe--icons' src="https://drive.google.com/thumbnail?id=1ub8uXsNGA-VbdZnsA9-Iu2vwzbPDA3le&sz=w1000" height='20px' alt="email icon" />
               <p>cjporteria@gmail.com</p>
             </div>
             <div className="location">
-              <img className='contactMe--icons' src="../src/files/contacts/location.png" height='20px' alt="location icon" />
+              <img className='contactMe--icons' src="https://drive.google.com/thumbnail?id=1QAksmQWhR6UgnlKglAH1ihxFd9ln7Lki&sz=w1000" height='20px' alt="location icon" />
               <p>Metro Manila, Philippines</p>
             </div>
           </div>
@@ -81,7 +81,7 @@ export default function ContactMe() {
         <input className='contactMe--email' name='contactMe--email' type="email" placeholder='Email Address' required/>
         <input className='contactMe--subject' name='contactMe--subject' type="text" placeholder='Subject' required/>
         <textarea className='contactMe--message' name='contactMe--message' placeholder='Message' required/>
-        <button className={buttonDisabled ? 'buttonDisabled' : 'buttonEnabled'}>Send <img src="../src/files/send.png" alt="" height='100%' /></button>
+        <button className={buttonDisabled ? 'buttonDisabled' : 'buttonEnabled'}>Send</button>
       </form>
     </section>
   )

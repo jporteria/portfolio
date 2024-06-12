@@ -24,7 +24,7 @@ export default function AboutMe() {
       <h1 className={inView ? 'showHidden' : 'hidden'}>About Me</h1>
       <div className={inView ? 'aboutMe showHidden' : 'aboutMe hidden'}>
           <div className='aboutMePhotoContainer'>
-            <img className='aboutMePhoto' src="../src/files/IMG_1511.jpg" alt="photo not available" />
+            <img className='aboutMePhoto' src="https://drive.google.com/thumbnail?id=1tjYmHsGTTnB-vtPZib6Krqy1C8ugiHO4&sz=w1000" alt="photo not available" />
           </div>
           <div className='summary'>
             <p>

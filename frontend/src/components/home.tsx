@@ -14,7 +14,7 @@ export default function Home() {
         </a>
       </div>
       <div className="homePhotoContainer">
-        <img className='homePhoto' src="../src/files/myPhoto.png" alt='photo not available'  />
+        <img className='homePhoto' src="https://drive.google.com/thumbnail?id=1N2PXbaGM-Yj3rkuDX2Lbra2KzYT_6JaU&sz=w1000" alt='photo not available'  />
       </div>
     </section>
   )
