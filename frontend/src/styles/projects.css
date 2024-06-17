@@ -30,6 +30,7 @@
     width: 500px;
     padding: 20px;
     margin-top: 50px;
+    font-size: 20px;
 }
 .project--title{
     font-size: 2rem;
@@ -40,9 +41,9 @@
     column-gap: 20px;
 }
 .project--buttons > button{
-    height: 25px;
+    height: auto;
     width: auto;
-    padding: 0 15px;
+    padding: 5px 15px;
     background: none;
     color: var(--white);
     border: 2px solid var(--white);

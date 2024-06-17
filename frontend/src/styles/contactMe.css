@@ -48,6 +48,7 @@
     display: flex;
     column-gap: 10px;
     margin-top: 30px;
+    cursor: pointer;
 }
 .socialBox{
     /* border: 1px solid green; */
@@ -56,6 +57,10 @@
     height: 30px;
     width: 30px;
     border-radius: 6px;
+}
+.socialIcon:hover{
+    scale: 1.1;
+    transition: all .1s;
 }
 .contactMe--form{
     /* border: 1px solid white; */

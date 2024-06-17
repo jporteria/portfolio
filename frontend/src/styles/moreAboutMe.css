@@ -1,29 +1,56 @@
 .moreAboutMe--box{
     background-color: white;
-    height: 90vh;
-    width: 60vw;
+    height: auto;
+    width: 900px;
     z-index: 3;
     position: fixed;
     top: 5vh;
     display: flex;
+    flex-direction: column;
+    align-items: end;
 }
 .hideMoreAboutMe--box{
     display: none;
 }
 .moreAboutMe--close{
-    height: 20px;
-    width: 20px;
-    position: absolute;
-    right: 0;
-    margin: 10px;
+    height: auto;
+    width: auto;
+    position: fixed;
+    /* right: 0; */
+    margin: 15px 10px;
     border: none;
     background: none;
+    /* border: 1px solid red; */
+}
+.moreAboutMe{
+    color: var(--secondary);
+    /* border: 1px solid red; */
+    margin: 50px 50px 10px 50px;
+    font-size: 20px;
+    text-align: justify;
+}
+.moreAboutMe--withCloseButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.moreAboutMe--closeButton{
+    height: 40px;
+    width: 100px;
+    margin: 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background: none;
+    border: 2px solid var(--secondary);
+    color: var(--secondary);
 }
 
 @media screen and (max-width: 900px){
     .moreAboutMe--box{
-        height: 80vh;
+        height: 98vh;
         width: 95vw;
-        top: 10vh;
+        top: 2vh;
+        overflow-y: scroll;
     }
 }
