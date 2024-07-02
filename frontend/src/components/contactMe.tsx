@@ -59,7 +59,7 @@ export default function ContactMe() {
             </div>
             <div className="location">
               <img className='contactMe--icons' src="https://drive.google.com/thumbnail?id=1QAksmQWhR6UgnlKglAH1ihxFd9ln7Lki&sz=w1000" height='20px' alt="location icon" />
-              <p>Metro Manila, Philippines</p>
+              <p>Quezon City, Philippines</p>
             </div>
           </div>
         {/* </div> */}
