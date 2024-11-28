@@ -51,7 +51,7 @@
 }
 .homePhoto{
     height: 700px;
-    width: 700px;
+    width: 600px;
 }
 
 @media screen and (max-width: 900px){

@@ -44,6 +44,7 @@
 }
 .aboutMePhoto{
     height: 100%;
+    background-color: var(--white);
 }
 .more{
     height: 40px;
