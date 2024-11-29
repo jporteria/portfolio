@@ -10,7 +10,7 @@ export default function Projects() {
     <section className='projects--section' id='projects--section' ref={ref}>
       <h1 className={inView ? 'showHidden' : 'hidden'}>Projects</h1>
       <div className={inView ? 'project showHidden' : 'project hidden'}>
-        <img className="projectPhoto" src="https://drive.google.com/thumbnail?id=1eYlCSgYGTrUKo82gsq5w4f0RkR67WehS&sz=w1000" alt="no image available"/>
+        <img className="projectPhoto" src="images/netPlease.png" alt="no image available"/>
         <div className="project--description">
           <h2 className='project--title'>NetPlease</h2>
           <div className="project--buttons">

@@ -29,7 +29,11 @@ export default function ContactMe() {
           form.current.reset()
         },
         (error) => {
-          alert('FAILED...'+ error);
+          Swal.fire({
+            title: "Message unsuccessful",
+            text: error,
+            icon: "error"
+          });
           // setButton()
         },
       );
@@ -50,28 +54,28 @@ export default function ContactMe() {
           </p>
           <div className='contactMe--pii'>
             <div className="phone">
-              <img className='contactMe--icons' src="https://drive.google.com/thumbnail?id=1phhJcwAnj02xxvJNEwpky3_espZhDols&sz=w1000" height='20px' alt="phone icon" />
+              <img className='contactMe--icons' src="images/contacts/phone.png" height='20px' alt="phone icon" />
               <p>+63 946-581-3090</p>
             </div>
             <div className="email">
-              <img className='contactMe--icons' src="https://drive.google.com/thumbnail?id=1ub8uXsNGA-VbdZnsA9-Iu2vwzbPDA3le&sz=w1000" height='20px' alt="email icon" />
+              <img className='contactMe--icons' src="images/contacts/email.png" height='20px' alt="email icon" />
               <p>cjporteria@gmail.com</p>
             </div>
             <div className="location">
-              <img className='contactMe--icons' src="https://drive.google.com/thumbnail?id=1QAksmQWhR6UgnlKglAH1ihxFd9ln7Lki&sz=w1000" height='20px' alt="location icon" />
+              <img className='contactMe--icons' src="images/contacts/location.png" height='20px' alt="location icon" />
               <p>Quezon City, Philippines</p>
             </div>
           </div>
         {/* </div> */}
         <div className={inView ? 'contactMe--socials showHidden' : 'contactMe--socials hidden'}>
           <div className='socialBox' onClick={() => window.open('https://www.facebook.com/curlytopszxc', 'fb')}>
-            <img className='socialIcon' src="https://drive.google.com/thumbnail?id=1s7p9jof3g20Nz294bzduYnsjmeapbFNH&sz=w1000" alt="fb icon" />
+            <img className='socialIcon' src="images/contacts/fb.png" alt="fb icon" />
           </div>
           <div className='socialBox' onClick={() => window.open('https://www.instagram.com/jessporteria_/', 'li')}>
-            <img className='socialIcon' src="https://drive.google.com/thumbnail?id=1d14UJ3ipouEqya0N0kf9DTEgIj75YNDl&sz=w1000" alt="ig icon" />
+            <img className='socialIcon' src="images/contacts/ig.png" alt="ig icon" />
           </div>
           <div className='socialBox' onClick={() => window.open('https://www.linkedin.com/in/jessie-porteria', 'li')}>
-            <img className='socialIcon' src="https://drive.google.com/thumbnail?id=1sgv3lIhLmHA0LBHW_X1V5GeV14BAUfjY&sz=w1000" alt="linkedin icon" />
+            <img className='socialIcon' src="images/contacts/li.png" alt="linkedin icon" />
           </div>
         </div>
       </div>

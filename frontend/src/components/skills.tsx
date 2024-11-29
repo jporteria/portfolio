@@ -18,115 +18,115 @@ export default function Skills() {
       <div className="skills--array">
         <div className='skills'>
           <div>
-            <img src="https://drive.google.com/thumbnail?id=14b9Y6HxsEcwrZQ2gTpPaNHyq5usyGkda&sz=w1000" alt="" />
+            <img src="images/skillsIcons/html.png" alt="" />
             <p>HTML</p>
           </div>
           <div>
-            <img src="https://drive.google.com/thumbnail?id=1QJ29DkwIM9A3P_40xHm3YLbHF6SB_IDs&sz=w1000" alt="" />
+            <img src="images/skillsIcons/css.png" alt="" />
             <p>CSS</p>
           </div>
           <div>
-            <img src="https://drive.google.com/thumbnail?id=11e9NPPa4PMiDDYKwP_32E3ZP-OOfqD31&sz=w1000" alt="" />
+            <img src="images/skillsIcons/javascript.png" alt="" />
             <p>JavaScript</p>
           </div>
           <div>
-            <img src="https://drive.google.com/thumbnail?id=1-HG9KKTuOn3Q48ubl06wtJUL6DGpA-Dk&sz=w1000" alt="" />
+            <img src="images/skillsIcons/typescript.png" alt="" />
             <p>TypeScript</p>
           </div>
           <div>
-            <img src="https://drive.google.com/thumbnail?id=1As8hNAk4p1XAoVaaK39X0IbUQ6Kk-GSF&sz=w1000" alt="" />
+            <img src="images/skillsIcons/mongodb.png" alt="" />
             <p>MongoDB</p>
           </div>
           <div>
-            <img src="https://drive.google.com/thumbnail?id=1NMdOcDwNmqwrRVeQVJ4cIaVtg5Lf20UQ&sz=w1000" alt="" />
+            <img src="images/skillsIcons/express.png" alt="" />
             <p>Express</p>
           </div>
           <div>
-            <img src="https://drive.google.com/thumbnail?id=1ftC7CybKw5nwcjPHqHJSoO-KGg69_PcR&sz=w1000" alt="" />
+            <img src="images/skillsIcons/react.png" alt="" />
             <p>React</p>
           </div>
           <div>
-            <img src="https://drive.google.com/thumbnail?id=1vdIP-ztF2QAIU3uBuECIUyvCUbKnIdCW&sz=w1000" alt="" />
+            <img src="images/skillsIcons/nodejs.png" alt="" />
             <p>Node JS</p>
           </div>
           <div>
-            <img src="https://drive.google.com/thumbnail?id=1myR_g99DklBiaxx-_AIRBeC-X7ytIxk7&sz=w1000" alt="" />
+            <img src="images/skillsIcons/git.png" alt="" />
             <p>Git</p>
           </div>
         </div>
         <div className='skills'>
           <div>
-            <img src="https://drive.google.com/thumbnail?id=14b9Y6HxsEcwrZQ2gTpPaNHyq5usyGkda&sz=w1000" alt="" />
+            <img src="images/skillsIcons/html.png" alt="" />
             <p>HTML</p>
           </div>
           <div>
-            <img src="https://drive.google.com/thumbnail?id=1QJ29DkwIM9A3P_40xHm3YLbHF6SB_IDs&sz=w1000" alt="" />
+            <img src="images/skillsIcons/css.png" alt="" />
             <p>CSS</p>
           </div>
           <div>
-            <img src="https://drive.google.com/thumbnail?id=11e9NPPa4PMiDDYKwP_32E3ZP-OOfqD31&sz=w1000" alt="" />
+            <img src="images/skillsIcons/javascript.png" alt="" />
             <p>JavaScript</p>
           </div>
           <div>
-            <img src="https://drive.google.com/thumbnail?id=1-HG9KKTuOn3Q48ubl06wtJUL6DGpA-Dk&sz=w1000" alt="" />
+            <img src="images/skillsIcons/typescript.png" alt="" />
             <p>TypeScript</p>
           </div>
           <div>
-            <img src="https://drive.google.com/thumbnail?id=1As8hNAk4p1XAoVaaK39X0IbUQ6Kk-GSF&sz=w1000" alt="" />
+            <img src="images/skillsIcons/mongodb.png" alt="" />
             <p>MongoDB</p>
           </div>
           <div>
-            <img src="https://drive.google.com/thumbnail?id=1NMdOcDwNmqwrRVeQVJ4cIaVtg5Lf20UQ&sz=w1000" alt="" />
+            <img src="images/skillsIcons/express.png" alt="" />
             <p>Express</p>
           </div>
           <div>
-            <img src="https://drive.google.com/thumbnail?id=1ftC7CybKw5nwcjPHqHJSoO-KGg69_PcR&sz=w1000" alt="" />
+            <img src="images/skillsIcons/react.png" alt="" />
             <p>React</p>
           </div>
           <div>
-            <img src="https://drive.google.com/thumbnail?id=1vdIP-ztF2QAIU3uBuECIUyvCUbKnIdCW&sz=w1000" alt="" />
+            <img src="images/skillsIcons/nodejs.png" alt="" />
             <p>Node JS</p>
           </div>
           <div>
-            <img src="https://drive.google.com/thumbnail?id=1myR_g99DklBiaxx-_AIRBeC-X7ytIxk7&sz=w1000" alt="" />
+            <img src="images/skillsIcons/git.png" alt="" />
             <p>Git</p>
           </div>
         </div>
         <div className='skills'>
           <div>
-            <img src="https://drive.google.com/thumbnail?id=14b9Y6HxsEcwrZQ2gTpPaNHyq5usyGkda&sz=w1000" alt="" />
+            <img src="images/skillsIcons/html.png" alt="" />
             <p>HTML</p>
           </div>
           <div>
-            <img src="https://drive.google.com/thumbnail?id=1QJ29DkwIM9A3P_40xHm3YLbHF6SB_IDs&sz=w1000" alt="" />
+            <img src="images/skillsIcons/css.png" alt="" />
             <p>CSS</p>
           </div>
           <div>
-            <img src="https://drive.google.com/thumbnail?id=11e9NPPa4PMiDDYKwP_32E3ZP-OOfqD31&sz=w1000" alt="" />
+            <img src="images/skillsIcons/javascript.png" alt="" />
             <p>JavaScript</p>
           </div>
           <div>
-            <img src="https://drive.google.com/thumbnail?id=1-HG9KKTuOn3Q48ubl06wtJUL6DGpA-Dk&sz=w1000" alt="" />
+            <img src="images/skillsIcons/typescript.png" alt="" />
             <p>TypeScript</p>
           </div>
           <div>
-            <img src="https://drive.google.com/thumbnail?id=1As8hNAk4p1XAoVaaK39X0IbUQ6Kk-GSF&sz=w1000" alt="" />
+            <img src="images/skillsIcons/mongodb.png" alt="" />
             <p>MongoDB</p>
           </div>
           <div>
-            <img src="https://drive.google.com/thumbnail?id=1NMdOcDwNmqwrRVeQVJ4cIaVtg5Lf20UQ&sz=w1000" alt="" />
+            <img src="images/skillsIcons/express.png" alt="" />
             <p>Express</p>
           </div>
           <div>
-            <img src="https://drive.google.com/thumbnail?id=1ftC7CybKw5nwcjPHqHJSoO-KGg69_PcR&sz=w1000" alt="" />
+            <img src="images/skillsIcons/react.png" alt="" />
             <p>React</p>
           </div>
           <div>
-            <img src="https://drive.google.com/thumbnail?id=1vdIP-ztF2QAIU3uBuECIUyvCUbKnIdCW&sz=w1000" alt="" />
+            <img src="images/skillsIcons/nodejs.png" alt="" />
             <p>Node JS</p>
           </div>
           <div>
-            <img src="https://drive.google.com/thumbnail?id=1myR_g99DklBiaxx-_AIRBeC-X7ytIxk7&sz=w1000" alt="" />
+            <img src="images/skillsIcons/git.png" alt="" />
             <p>Git</p>
           </div>
         </div>
