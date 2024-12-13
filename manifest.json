@@ -1,0 +1,9 @@
+{
+    "name": "portfolio",
+    "manifest_version": 3,
+    "version": "1.0.0",
+    "action": {
+        "default_popup": "https://jporteria.github.io/portfolio/",
+        "default_title": "portfolio"
+    }
+}

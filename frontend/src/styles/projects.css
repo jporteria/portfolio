@@ -1,92 +1,131 @@
-.projects--section{
+.projects--section {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  /* row-gap: 20px; */
+  padding-top: 80px;
+  overflow: hidden;
+}
+.slider--container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+  }
+.project--slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.slider--buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+#prevBtn {
+  left: 10px;
+}
+
+#nextBtn {
+  right: 10px;
+}
+.projects {
+  flex: 0 0 100vw; /* Each slide takes full viewport width */
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  /* background: lightcoral; */
+}
+.project {
+  /* background-color: red; */
+  flex: 0 0 100vw; /* Each slide takes full viewport width */
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projectPhoto {
+  width: 500px;
+  height: 500px;
+}
+.project--description {
+  /* border: 1px solid green; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  padding: 20px;
+  margin-top: 50px;
+  font-size: 20px;
+}
+.project--title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.project--buttons {
+  display: flex;
+  column-gap: 20px;
+}
+.project--buttons > button {
+  height: auto;
+  width: auto;
+  padding: 5px 15px;
+  background: none;
+  color: var(--white);
+  border: 2px solid var(--white);
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 900px) {
+  .projects--section {
     width: 100vw;
     height: auto;
     display: flex;
     position: relative;
     flex-direction: column;
     align-items: center;
-    row-gap: 20px;
-    padding-top: 100px;
-}
-.project{
+    row-gap: 0;
+    padding: 100px 0;
+  }
+  .project {
     /* border: 1px solid yellow; */
     height: auto;
     width: 90%;
     display: flex;
-    justify-content: center;
-    column-gap: 100px;
-    padding: 50px;
-}
-.projectPhoto{
-    width: 500px;
-    height: 500px;
-}
-.project--description{
+    flex-direction: column;
+    justify-content: space-between;
+    /* column-gap: 100px; */
+    padding: 0;
+  }
+  .projectPhoto {
+    width: auto;
+    height: auto;
+  }
+  .project--description {
     /* border: 1px solid green; */
     display: flex;
     /* justify-content: center; */
     align-items: center;
     flex-direction: column;
-    width: 500px;
+    width: auto;
     padding: 20px;
-    margin-top: 50px;
-    font-size: 20px;
-}
-.project--title{
+    margin-top: 0;
+  }
+  .project--title {
     font-size: 2rem;
     margin-bottom: 20px;
-}
-.project--buttons{
-    display: flex;
-    column-gap: 20px;
-}
-.project--buttons > button{
-    height: auto;
-    width: auto;
-    padding: 5px 15px;
-    background: none;
-    color: var(--white);
-    border: 2px solid var(--white);
-    border-radius: 5px;
-}
-
-@media screen and (max-width: 900px){
-    .projects--section{
-        width: 100vw;
-        height: auto;
-        display: flex;
-        position: relative;
-        flex-direction: column;
-        align-items: center;
-        row-gap: 0;
-        padding: 100px 0;
-    }
-    .project{
-        /* border: 1px solid yellow; */
-        height: auto;
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        /* column-gap: 100px; */
-        padding: 0;
-    }
-    .projectPhoto{
-        width: auto;
-        height: auto;
-    }
-    .project--description{
-        /* border: 1px solid green; */
-        display: flex;
-        /* justify-content: center; */
-        align-items: center;
-        flex-direction: column;
-        width: auto;
-        padding: 20px;
-        margin-top: 0;
-    }
-    .project--title{
-        font-size: 2rem;
-        margin-bottom: 20px;
-    }
+  }
 }
