@@ -22,13 +22,13 @@ export default function AboutMe() {
     <section className="aboutMe--section" id="aboutMe--section" ref={ref}>
       <h1 className={inView ? "showHidden" : "hidden"}>About Me</h1>
       <div className={inView ? "aboutMe showHidden" : "aboutMe hidden"}>
-        <div className="aboutMePhotoContainer">
+        {/* <div className="aboutMePhotoContainer">
           <img
             className="aboutMePhoto"
             src="images/avatar.png"
             alt="photo not available"
           />
-        </div>
+        </div> */}
         <div className="summary">
           <p>
             I'm a skilled Full Stack Developer with expertise in front-end and

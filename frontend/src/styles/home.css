@@ -101,7 +101,6 @@
             drop-shadow(0 0 5px rgb(230, 231, 234))
     }
     .homePhoto{
-        height: 100%;
-        width: 100%;
+        display: none;
     }
 }

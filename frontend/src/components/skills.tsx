@@ -1,8 +1,9 @@
 // import React from 'react'
 // import { useInView } from 'react-intersection-observer'
 
+import { useState } from "react";
+
 export default function Skills() {
-  
   // const { ref, inView, entry } = useInView({
   //   threshold: 0.2
   // })
@@ -12,125 +13,27 @@ export default function Skills() {
   //   console.log('hello')
   // }
 
+  const [skills, setSkills] = useState([
+    { image: "images/skillsIcons/html.png", skillName: "HTML" },
+    { image: "images/skillsIcons/css.png", skillName: "CSS" },
+    { image: "images/skillsIcons/javascript.png", skillName: "JavaScript" },
+    { image: "images/skillsIcons/typescript.png", skillName: "TypeScript" },
+    { image: "images/skillsIcons/mongodb.png", skillName: "MongoDB" },
+    { image: "images/skillsIcons/express.png", skillName: "Express" },
+    { image: "images/skillsIcons/react.png", skillName: "React" },
+    { image: "images/skillsIcons/nodejs.png", skillName: "Node JS" },
+    { image: "images/skillsIcons/git.png", skillName: "Git" },
+  ]);
+
   return (
-    <div className='skills--section' id="skills--section">
+    <div className="skills--section" id="skills--section">
       {/* <h1>Skills</h1> */}
-      <div className="skills--array">
-        <div className='skills'>
-          <div>
-            <img src="images/skillsIcons/html.png" alt="" />
-            <p>HTML</p>
-          </div>
-          <div>
-            <img src="images/skillsIcons/css.png" alt="" />
-            <p>CSS</p>
-          </div>
-          <div>
-            <img src="images/skillsIcons/javascript.png" alt="" />
-            <p>JavaScript</p>
-          </div>
-          <div>
-            <img src="images/skillsIcons/typescript.png" alt="" />
-            <p>TypeScript</p>
-          </div>
-          <div>
-            <img src="images/skillsIcons/mongodb.png" alt="" />
-            <p>MongoDB</p>
-          </div>
-          <div>
-            <img src="images/skillsIcons/express.png" alt="" />
-            <p>Express</p>
-          </div>
-          <div>
-            <img src="images/skillsIcons/react.png" alt="" />
-            <p>React</p>
-          </div>
-          <div>
-            <img src="images/skillsIcons/nodejs.png" alt="" />
-            <p>Node JS</p>
-          </div>
-          <div>
-            <img src="images/skillsIcons/git.png" alt="" />
-            <p>Git</p>
-          </div>
+      {skills.map((skill, i) => (
+        <div key={i} className="skills">
+          <img src={skill.image} alt="" />
+          <p>{skill.skillName}</p>
         </div>
-        <div className='skills'>
-          <div>
-            <img src="images/skillsIcons/html.png" alt="" />
-            <p>HTML</p>
-          </div>
-          <div>
-            <img src="images/skillsIcons/css.png" alt="" />
-            <p>CSS</p>
-          </div>
-          <div>
-            <img src="images/skillsIcons/javascript.png" alt="" />
-            <p>JavaScript</p>
-          </div>
-          <div>
-            <img src="images/skillsIcons/typescript.png" alt="" />
-            <p>TypeScript</p>
-          </div>
-          <div>
-            <img src="images/skillsIcons/mongodb.png" alt="" />
-            <p>MongoDB</p>
-          </div>
-          <div>
-            <img src="images/skillsIcons/express.png" alt="" />
-            <p>Express</p>
-          </div>
-          <div>
-            <img src="images/skillsIcons/react.png" alt="" />
-            <p>React</p>
-          </div>
-          <div>
-            <img src="images/skillsIcons/nodejs.png" alt="" />
-            <p>Node JS</p>
-          </div>
-          <div>
-            <img src="images/skillsIcons/git.png" alt="" />
-            <p>Git</p>
-          </div>
-        </div>
-        <div className='skills'>
-          <div>
-            <img src="images/skillsIcons/html.png" alt="" />
-            <p>HTML</p>
-          </div>
-          <div>
-            <img src="images/skillsIcons/css.png" alt="" />
-            <p>CSS</p>
-          </div>
-          <div>
-            <img src="images/skillsIcons/javascript.png" alt="" />
-            <p>JavaScript</p>
-          </div>
-          <div>
-            <img src="images/skillsIcons/typescript.png" alt="" />
-            <p>TypeScript</p>
-          </div>
-          <div>
-            <img src="images/skillsIcons/mongodb.png" alt="" />
-            <p>MongoDB</p>
-          </div>
-          <div>
-            <img src="images/skillsIcons/express.png" alt="" />
-            <p>Express</p>
-          </div>
-          <div>
-            <img src="images/skillsIcons/react.png" alt="" />
-            <p>React</p>
-          </div>
-          <div>
-            <img src="images/skillsIcons/nodejs.png" alt="" />
-            <p>Node JS</p>
-          </div>
-          <div>
-            <img src="images/skillsIcons/git.png" alt="" />
-            <p>Git</p>
-          </div>
-        </div>
-      </div>
+      ))}
     </div>
-  )
+  );
 }
