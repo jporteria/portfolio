@@ -8,7 +8,7 @@ export default function Home() {
           <span className='name'>Hi, I'm Jess</span> <br />
           I'm a full-stack web developer
         </p>
-        <button className="downloadCV" onClick={() => window.open('./files/Jessie.pdf', 'resume')}>Open CV</button>
+        <button className="downloadCV" onClick={() => window.open('files/Jessie.pdf', 'resume')}>Open CV</button>
         {/* <a href='../src/files/Jessie.pdf' download='Porteria.pdf'>
           <button className="downloadCV">Download CV</button>
         </a> */}

@@ -111,7 +111,7 @@ export default function Projects() {
         >
           <img
             className="slider--image"
-            src="./images/prev-icon.png"
+            src="images/prev-icon.png"
             alt="Prev"
           />
         </button>
@@ -145,7 +145,7 @@ export default function Projects() {
         >
           <img
             className="slider--image"
-            src="./images/next-icon.png"
+            src="images/next-icon.png"
             alt="Next"
           />
         </button>

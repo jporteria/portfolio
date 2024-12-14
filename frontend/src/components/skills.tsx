@@ -1,8 +1,6 @@
 // import React from 'react'
 // import { useInView } from 'react-intersection-observer'
 
-import { useState } from "react";
-
 export default function Skills() {
   // const { ref, inView, entry } = useInView({
   //   threshold: 0.2
@@ -13,7 +11,7 @@ export default function Skills() {
   //   console.log('hello')
   // }
 
-  const [skills, setSkills] = useState([
+  const skills = [
     { image: "images/skillsIcons/html.png", skillName: "HTML" },
     { image: "images/skillsIcons/css.png", skillName: "CSS" },
     { image: "images/skillsIcons/javascript.png", skillName: "JavaScript" },
@@ -23,7 +21,7 @@ export default function Skills() {
     { image: "images/skillsIcons/react.png", skillName: "React" },
     { image: "images/skillsIcons/nodejs.png", skillName: "Node JS" },
     { image: "images/skillsIcons/git.png", skillName: "Git" },
-  ]);
+  ];
 
   return (
     <div className="skills--section" id="skills--section">

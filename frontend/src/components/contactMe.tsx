@@ -28,7 +28,7 @@ export default function ContactMe() {
           setButtonDisabled(false)
           form.current.reset()
         },
-        (error) => {
+        (error: any) => {
           Swal.fire({
             title: "Message unsuccessful",
             text: error,
