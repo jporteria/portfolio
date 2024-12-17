@@ -54,7 +54,7 @@ export default function Header() {
     <div id="header" className={header ? 'header active' : 'header'}>
           <div className="logo">
             <a href="#">
-              <h1 className="JPorteria">JPorteria</h1>
+              <h1 className="JPorteria">Jess.dev</h1>
             </a>
           </div>
           <div className="header--menu">

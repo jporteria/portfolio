@@ -18,14 +18,14 @@ export default function Projects() {
         <div className="project--buttons">
           <button
             onClick={() =>
-              window.open("https://netplease.onrender.com/", "NetPlease")
+              window.open("https://netplease.onrender.com/", "_blank")
             }
           >
             Go Live
           </button>
           <button
             onClick={() =>
-              window.open("https://github.com/wagako3/netplease", "NetPlease")
+              window.open("https://github.com/wagako3/netplease", "_blank")
             }
           >
             View on Github
@@ -45,15 +45,15 @@ export default function Projects() {
     <div className={inView ? "project showHidden" : "project hidden"}>
       <img
         className="projectPhoto"
-        src="images/netPlease.png"
+        src="images/giftlink.png"
         alt="no image available"
       />
       <div className="project--description">
-        <h2 className="project--title">Second Section</h2>
+        <h2 className="project--title">GiftLink</h2>
         <div className="project--buttons">
           <button
             onClick={() =>
-              window.open("https://example.com/second-section", "SecondSection")
+              window.open("https://giftlink-xw98.onrender.com/app", "_blank")
             }
           >
             Go Live
@@ -61,8 +61,8 @@ export default function Projects() {
           <button
             onClick={() =>
               window.open(
-                "https://github.com/example/second-section",
-                "SecondSection"
+                "https://github.com/jporteria/fullstack-capstone-project",
+                "_blank"
               )
             }
           >
@@ -70,8 +70,14 @@ export default function Projects() {
           </button>
         </div>
         <p>
-          This is the second project description. You can customize it based on
-          your actual content and requirements.
+          This project was built using the MERN stack (MongoDB, Express, React,
+          and Node.js) with JWT-based authentication. The app was designed to
+          demonstrate core web development skills, including user
+          authentication, CRUD operations, containerized deployment using
+          Docker, and a CI/CD (Continuous Integration/Continuous Deployment)
+          pipeline for automating the build and deployment process. However,
+          after evaluating its functionality and feasibility, the project was
+          discontinued as it was deemed not suitable for real-world use.
         </p>
       </div>
     </div>
@@ -80,10 +86,7 @@ export default function Projects() {
   const [index, setIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
-  const slides = [
-    <NetPleaseSection />,
-    <SecondSection />,
-  ];
+  const slides = [<SecondSection />, <NetPleaseSection />];
 
   const handleTransitionEnd = () => {
     setIsTransitioning(false);
@@ -103,7 +106,7 @@ export default function Projects() {
   return (
     <section className="projects--section" id="projects--section" ref={ref}>
       <h1 className={inView ? "showHidden" : "hidden"}>Projects</h1>
-      <div className="slider--container">
+      <div className={inView ? "showHidden slider--container" : "hidden slider--container"}>
         <button
           className="slider--buttons"
           id="prevBtn"
