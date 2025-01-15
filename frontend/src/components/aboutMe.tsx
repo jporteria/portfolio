@@ -31,12 +31,13 @@ export default function AboutMe() {
         </div> */}
         <div className="summary">
           <p>
-            I'm a skilled Full Stack Developer with expertise in front-end and
-            back-end development. I'm passionate about creating and optimizing
-            websites. My aptitude for quickly grasping new concepts, along with
-            my collaborative approach, makes me an asset to any professional
-            team. I'm prepared to enhance your development team with innovative
-            solutions and unwavering dedication.
+            I am a dedicated Full Stack Developer with experience in both
+            front-end and back-end development. I have a passion for building
+            and optimizing websites that deliver excellent user experiences. I
+            take pride in my ability to learn new concepts quickly and work
+            collaboratively with others to achieve shared goals. I’m eager to
+            contribute my skills, creativity, and commitment to your development
+            team while continuing to grow and learn in a dynamic environment.
           </p>
           <button className="more" onClick={showAboutBox}>
             More about me

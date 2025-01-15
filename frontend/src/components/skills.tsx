@@ -21,17 +21,20 @@ export default function Skills() {
     { image: "images/skillsIcons/react.png", skillName: "React" },
     { image: "images/skillsIcons/nodejs.png", skillName: "Node JS" },
     { image: "images/skillsIcons/git.png", skillName: "Git" },
+    { image: "images/skillsIcons/firebase.png", skillName: "Firebase" },
   ];
 
   return (
-    <div className="skills--section" id="skills--section">
-      {/* <h1>Skills</h1> */}
-      {skills.map((skill, i) => (
-        <div key={i} className="skills">
-          <img src={skill.image} alt="" />
-          <p>{skill.skillName}</p>
-        </div>
-      ))}
+    <div>
+      <h2>My Skills</h2>
+      <div className="skills--section" id="skills--section">
+        {skills.map((skill, i) => (
+          <div key={i} className="skills">
+            <img src={skill.image} alt="" />
+            <p>{skill.skillName}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

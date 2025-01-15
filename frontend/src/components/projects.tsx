@@ -41,7 +41,7 @@ export default function Projects() {
     </div>
   );
 
-  const SecondSection = () => (
+  const GiftLinkSection = () => (
     <div className={inView ? "project showHidden" : "project hidden"}>
       <img
         className="projectPhoto"
@@ -82,11 +82,51 @@ export default function Projects() {
       </div>
     </div>
   );
+  const SideNoteSection = () => (
+    <div className={inView ? "project showHidden" : "project hidden"}>
+      <img
+        className="projectPhoto"
+        src="images/sidenote.png"
+        alt="no image available"
+      />
+      <div className="project--description">
+        <h2 className="project--title">SideNote</h2>
+        <div className="project--buttons">
+          <button
+            onClick={() =>
+              window.open("https://sidenote.onrender.com/", "_blank")
+            }
+          >
+            Go Live
+          </button>
+          <button
+            onClick={() =>
+              window.open("https://github.com/jporteria/SideNote-web", "_blank")
+            }
+          >
+            View on Github
+          </button>
+        </div>
+        <p>
+          SideNote is a note-taking web application designed to provide a
+          seamless experience for users who want to take notes without leaving
+          the browser. Originally built as a Chrome extension, it was
+          transitioned to a web-based application due to Manifest V3
+          restrictions. The app is powered by React.js for the frontend and
+          Firebase for authentication and real-time data synchronization.
+        </p>
+      </div>
+    </div>
+  );
 
   const [index, setIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
-  const slides = [<SecondSection />, <NetPleaseSection />];
+  const slides = [
+    <SideNoteSection />,
+    <GiftLinkSection />,
+    <NetPleaseSection />,
+  ];
 
   const handleTransitionEnd = () => {
     setIsTransitioning(false);
@@ -106,7 +146,11 @@ export default function Projects() {
   return (
     <section className="projects--section" id="projects--section" ref={ref}>
       <h1 className={inView ? "showHidden" : "hidden"}>Projects</h1>
-      <div className={inView ? "showHidden slider--container" : "hidden slider--container"}>
+      <div
+        className={
+          inView ? "showHidden slider--container" : "hidden slider--container"
+        }
+      >
         <button
           className="slider--buttons"
           id="prevBtn"
