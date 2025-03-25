@@ -10,12 +10,12 @@
   overflow: hidden;
 }
 .slider--container {
-  position: relative;
   display: flex;
-  align-items: center;
-  width: 100vw;
-  height: auto;
-  overflow: hidden;
+  flex-direction: row;
+  overflow-x: auto;
+  width: 100%;
+  scroll-snap-type: x mandatory; /* Enables snapping */
+  scroll-behavior: smooth;
 }
 .project--slider {
   display: flex;
@@ -43,18 +43,10 @@
 #nextBtn {
   right: 30px;
 }
-.projects {
-  flex: 0 0 100vw; /* Each slide takes full viewport width */
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  /* background: lightcoral; */
-}
 .project {
-  /* background-color: red; */
-  flex: 0 0 100vw; /* Each slide takes full viewport width */
+  flex: 0 0 100vw;
+  scroll-snap-align: center;
+  width: 100vw;
   height: auto;
   display: flex;
   align-items: center;
@@ -65,14 +57,11 @@
   height: 500px;
 }
 .project--description {
-  /* border: 1px solid green; */
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
   width: 500px;
   padding: 20px;
-  /* margin-top: 50px; */
   font-size: 20px;
 }
 .project--title {

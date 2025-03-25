@@ -22,6 +22,8 @@ export default function Skills() {
     { image: "images/skillsIcons/nodejs.png", skillName: "Node JS" },
     { image: "images/skillsIcons/git.png", skillName: "Git" },
     { image: "images/skillsIcons/firebase.png", skillName: "Firebase" },
+    { image: "images/skillsIcons/tailwind.png", skillName: "TailwindCSS" },
+    { image: "images/skillsIcons/wordpress.png", skillName: "Wordpress" },
   ];
 
   return (
@@ -30,7 +32,7 @@ export default function Skills() {
       <div className="skills--section" id="skills--section">
         {skills.map((skill, i) => (
           <div key={i} className="skills">
-            <img src={skill.image} alt="" />
+            <img src={skill.image} alt="" className="skillImage" />
             <p>{skill.skillName}</p>
           </div>
         ))}
