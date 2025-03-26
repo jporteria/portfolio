@@ -11,31 +11,32 @@ export default function Projects() {
   const projects = [
     {
       title: "WeWrite",
-      image: "images/netPlease.png",
+      image: "images/projects/wewrite.png",
       liveLink: "https://wewrite.blog",
       githubLink: "",
-      description:
-        "NetPlease is a movie rating website aimed at providing users with a platform to discover, rate, and review movies. This project is created using MERN stack and movie API from TMDb. This website is still in the development phase and does not have a responsive design yet.",
-    },
-    {
-      title: "NetPlease",
-      image: "images/netPlease.png",
-      liveLink: "https://netplease.onrender.com/",
-      githubLink: "https://github.com/wagako3/netplease",
-      description:
-        "NetPlease is a movie rating website aimed at providing users with a platform to discover, rate, and review movies. This project is created using MERN stack and movie API from TMDb. This website is still in the development phase and does not have a responsive design yet.",
+      description: `<a href="https://wewrite.blog/" target="_blank" rel="noopener noreferrer">WeWrite</a> is a dynamic blogging platform that enables writers to share their insights and engage with a wider audience. Built using the MERN stack, WeWrite provides a seamless user experience with a structured content management system for efficient blog creation and management.
+<br/><br/>
+The platform is deployed on Netlify with prerendering for optimized performance and SEO. It also features a custom domain, ensuring a professional and branded online presence.`,
     },
     {
       title: "SideNote",
-      image: "images/sidenote.png",
+      image: "images/projects/sidenote.png",
       liveLink: "https://sidenote.onrender.com/",
       githubLink: "https://github.com/jporteria/SideNote-web",
       description:
-        "SideNote is a note-taking web application designed to provide a seamless experience for users who want to take notes without leaving the browser. Originally built as a Chrome extension, it was transitioned to a web-based application due to Manifest V3 restrictions. The app is powered by React.js for the frontend and Firebase for authentication and real-time data synchronization.",
+         `<a href="https://sidenote.onrender.com/" target="_blank" rel="noopener noreferrer">SideNote</a> is a note-taking web application designed to provide a seamless experience for users who want to take notes without leaving the browser. Originally built as a Chrome extension, it was transitioned to a web-based application due to Manifest V3 restrictions. The app is powered by React.js for the frontend and Firebase for authentication and real-time data synchronization.`,
+    },
+    {
+      title: "NetPlease",
+      image: "images/projects/netplease.png",
+      liveLink: "https://netplease.onrender.com/",
+      githubLink: "https://github.com/wagako3/netplease",
+      description:
+        `<a href="https://netplease.onrender.com/" target="_blank" rel="noopener noreferrer">NetPlease</a> is a movie rating website that allows users to discover, rate, and review movies. Built using the MERN stack and powered by the TMDb movie API, it provides an interactive platform for movie enthusiasts to explore a vast collection of films, share their opinions, and engage with a community of like-minded users.`,
     },
     {
       title: "GiftLink",
-      image: "images/giftlink.png",
+      image: "images/projects/giftlink.png",
       liveLink: "https://giftlink-xw98.onrender.com/app",
       githubLink: "https://github.com/jporteria/fullstack-capstone-project",
       description:
@@ -107,16 +108,17 @@ export default function Projects() {
                 <button onClick={() => window.open(project.liveLink, "_blank")}>
                   View Live
                 </button>
-                {project.githubLink ?
+                {project.githubLink ? (
                   <button
-                  onClick={() => window.open(project.githubLink, "_blank")}
+                    onClick={() => window.open(project.githubLink, "_blank")}
                   >
-                  View on Github
-                </button>
-                : ""
-                }
+                    View on Github
+                  </button>
+                ) : (
+                  ""
+                )}
               </div>
-              <p>{project.description}</p>
+              <p dangerouslySetInnerHTML={{ __html: project.description }}></p>
             </div>
           </div>
         ))}
