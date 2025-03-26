@@ -5,44 +5,29 @@
   position: relative;
   flex-direction: column;
   align-items: center;
-  /* row-gap: 20px; */
   padding-top: 80px;
   overflow: hidden;
 }
+
+/* Scrollable container */
 .slider--container {
   display: flex;
+  margin-top: 20px;
   flex-direction: row;
   overflow-x: auto;
-  width: 100%;
-  scroll-snap-type: x mandatory; /* Enables snapping */
+  scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-}
-.project--slider {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-.slider--buttons {
-  position: absolute;
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.4);
-  color: white;
-  border: none;
-  padding: 20px;
-  cursor: pointer;
-  z-index: 1;
-}
-.slider--image {
-  height: 40px;
-}
-#prevBtn {
-  left: 30px;
+  width: 100%;
+  scrollbar-width: none; /* Hides default scrollbar */
+  -ms-overflow-style: none;
 }
 
-#nextBtn {
-  right: 30px;
+/* Hide scrollbar in WebKit browsers */
+.slider--container::-webkit-scrollbar {
+  display: none;
 }
+
+/* Individual project slides */
 .project {
   flex: 0 0 100vw;
   scroll-snap-align: center;
@@ -51,11 +36,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 50px;
 }
+
 .projectPhoto {
   width: 500px;
   height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
 }
+
 .project--description {
   display: flex;
   align-items: center;
@@ -63,66 +53,106 @@
   width: 500px;
   padding: 20px;
   font-size: 20px;
+  text-align: justify;
 }
+
 .project--title {
   font-size: 2rem;
   margin-bottom: 20px;
 }
+
 .project--buttons {
   display: flex;
   column-gap: 20px;
 }
+
 .project--buttons > button {
   height: auto;
   width: auto;
-  padding: 5px 15px;
+  padding: 8px 15px;
   background: none;
   color: var(--white);
   border: 2px solid var(--white);
   border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
+.project--buttons > button:hover {
+  background: var(--white);
+  color: black;
+}
+
+/* Navigation Arrows */
+.slider--buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 24px;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.slider--buttons:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+/* Positioning for Previous & Next Buttons */
+#prevBtn {
+  left: 15px;
+}
+
+#nextBtn {
+  right: 15px;
+}
+
+/* Responsive Adjustments */
 @media screen and (max-width: 900px) {
   .projects--section {
-    width: 100vw;
-    height: auto;
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 0;
     padding: 100px 0;
   }
+
   .project {
-    /* border: 1px solid yellow; */
-    height: auto;
     width: 90%;
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    /* column-gap: 100px; */
-    padding: 0;
+    gap: 0;
+    justify-content:start
   }
+
   .projectPhoto {
     width: auto;
     height: 300px;
   }
+
   .project--description {
-    /* border: 1px solid green; */
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    flex-direction: column;
     width: auto;
     padding: 20px;
     margin-top: 0;
-    text-align: center;
+    text-align: justify;
   }
+
   .project--title {
     font-size: 2rem;
     margin-bottom: 20px;
   }
-  .slider--image {
-    height: 30px;
+
+  /* Adjust arrow buttons for smaller screens */
+  .slider--buttons {
+    padding: 10px 15px;
+    font-size: 20px;
+  }
+
+  #prevBtn {
+    left: 5px;
+  }
+
+  #nextBtn {
+    right: 5px;
   }
 }
