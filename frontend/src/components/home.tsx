@@ -9,15 +9,60 @@ export default function Home() {
           high-performance web applications that deliver seamless user
           experiences.
         </p>
+        <div className="homepageSocial">
+        <div
+            className="socialBox"
+            onClick={() =>
+              window.open("https://www.facebook.com/curlytopszxc", "fb")
+            }
+          >
+            <img
+              className="socialIcon"
+              src="images/contacts/fb.png"
+              alt="fb icon"
+            />
+          </div>
+          <div
+            className="socialBox"
+            onClick={() =>
+              window.open("https://www.instagram.com/jessporteria_/", "li")
+            }
+          >
+            <img
+              className="socialIcon"
+              src="images/contacts/ig.png"
+              alt="ig icon"
+            />
+          </div>
+          <div
+            className="socialBox"
+            onClick={() =>
+              window.open("https://www.linkedin.com/in/jessie-porteria", "li")
+            }
+          >
+            <img
+              className="socialIcon"
+              src="images/contacts/li.png"
+              alt="linkedin icon"
+            />
+          </div>
+          <div
+            className="socialBox"
+            onClick={() => window.open("https://github.com/jporteria", "li")}
+          >
+            <img
+              className="socialIcon"
+              src="images/contacts/github.png"
+              alt="github icon"
+            />
+          </div>
+        </div>
         <button
           className="downloadCV"
-          onClick={() => window.open("files/Jessie.pdf", "resume")}
+          onClick={() => window.open("files/JessiePorteria_Resume.pdf", "resume")}
         >
           Open CV
         </button>
-        {/* <a href='../src/files/Jessie.pdf' download='Porteria.pdf'>
-          <button className="downloadCV">Download CV</button>
-        </a> */}
       </div>
       <div className="homePhotoContainer">
         <img

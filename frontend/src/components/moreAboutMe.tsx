@@ -12,7 +12,7 @@ export default function MoreAboutMe() {
     <div className={aboutBox ? "moreAboutMe--box" : "hideMoreAboutMe--box"}>
       <button className="moreAboutMe--close" onClick={hideAboutBox}>
         <img
-          src="https://drive.google.com/thumbnail?id=1w1HcCbNpBeXq5-RsqmjF7UeqSb1U_or-&sz=w1000"
+          src="images/close.png"
           alt="X"
           height="20px"
         />

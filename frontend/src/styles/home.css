@@ -1,108 +1,116 @@
-.home--section{
+.home--section {
+  background: none;
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  column-gap: 50px;
+}
+.home--text {
+  /* font-weight: bold; */
+  font-size: 24px;
+  height: auto;
+  width: auto;
+  max-width: 700px;
+  display: flex;
+  position: absolute;
+  left: 100px;
+  z-index: 1;
+  flex-direction: column;
+  align-items: left;
+}
+.name {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6,
+    0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+  color: var(--secondary);
+  font-weight: bold;
+  font-size: 70px;
+  height: auto;
+  width: auto;
+}
+.homepageSocial {
+  display: flex;
+  gap: 10px;
+}
+.socialBox {
+  filter: drop-shadow(0 0 1px rgb(99, 88, 221));
+}
+.downloadCV {
+  margin-top: 20px;
+  height: 40px;
+  width: 120px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background: none;
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+.homePhotoContainer {
+  height: 100vh;
+  position: absolute;
+  right: 100px;
+  width: auto;
+  display: flex;
+  align-items: end;
+  filter: drop-shadow(0 0 100px rgb(61, 96, 187))
+    drop-shadow(0 0 5px rgb(230, 231, 234));
+}
+.homePhoto {
+  height: 700px;
+  width: 600px;
+}
+
+@media screen and (max-width: 900px) {
+  .home--section {
     background: none;
     display: flex;
     position: relative;
     width: 100vw;
     height: 100vh;
-    align-items: center;
+    align-items: end;
     justify-content: center;
-    column-gap: 50px;
-}
-.home--text{
+    /* border: 1px solid red; */
+    /* background-color: var(--secondary); */
+  }
+  .home--text {
     /* font-weight: bold; */
     font-size: 24px;
     height: auto;
     width: auto;
-    max-width: 700px;
-    display: flex;
+    /* border: 1px solid red; */
+    padding: 0 30px;
     position: absolute;
-    left: 100px;
+    align-items: center;
+    justify-content: center;
+    left: auto;
     z-index: 1;
-    flex-direction: column;
-    align-items: left;
-}
-.name{
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+    top: 180px;
+    gap: 20px;
+  }
+  .name {
     color: var(--secondary);
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6,
+      0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
     font-weight: bold;
     font-size: 70px;
     height: auto;
     width: auto;
-}
-.downloadCV{
-    margin-top: 20px;
-    height: 40px;
-    width: 120px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    background: none;
-    border: 2px solid var(--white);
-    color: var(--white);
-}
-.homePhotoContainer{
-    height: 100vh;
-    position: absolute;
-    right: 100px;
+  }
+  .homePhotoContainer {
+    height: auto;
     width: auto;
+    position: absolute;
+    right: auto;
     display: flex;
-    align-items: end;
-    filter: 
-        drop-shadow(0 0 100px rgb(61, 96, 187)) 
-        drop-shadow(0 0 5px rgb(230, 231, 234))
-}
-.homePhoto{
-    height: 700px;
-    width: 600px;
-}
-
-@media screen and (max-width: 900px){
-    .home--section{
-        background: none;
-        display: flex;
-        position: relative;
-        width: 100vw;
-        height: 100vh;
-        align-items: end;
-        justify-content: center;
-        /* border: 1px solid red; */
-        /* background-color: var(--secondary); */
-    }
-    .home--text{
-        /* font-weight: bold; */
-        font-size: 24px;
-        height: auto;
-        width: auto;
-        /* border: 1px solid red; */
-        padding: 0 30px;
-        position: absolute;
-        align-items: center;
-        justify-content: center;
-        left: auto;
-        z-index: 1;
-        top: 180px;
-    }
-    .name{
-        color: var(--secondary);
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
-        font-weight: bold;
-        font-size: 70px;
-        height: auto;
-        width: auto;
-    }
-    .homePhotoContainer{
-        height: auto;
-        width: auto;
-        position: absolute;
-        right: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        filter: 
-            drop-shadow(0 0 100px rgb(61, 96, 187)) 
-            drop-shadow(0 0 5px rgb(230, 231, 234))
-    }
-    .homePhoto{
-        display: none;
-    }
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0 0 100px rgb(61, 96, 187))
+      drop-shadow(0 0 5px rgb(230, 231, 234));
+  }
+  .homePhoto {
+    display: none;
+  }
 }
