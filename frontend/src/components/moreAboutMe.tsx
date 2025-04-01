@@ -19,35 +19,11 @@ export default function MoreAboutMe() {
       </button>
       <div className="moreAboutMe--withCloseButton">
         <p className="moreAboutMe">
-          During college, I gained hands-on experience with programming
-          languages like C++, Java, and PHP, learning how to build software and
-          web applications from scratch to deployment. However, after graduating
-          in 2019, I faced a challenge that many fresh graduates encounter:
-          translating technical knowledge into a career. Unsure of how to
-          navigate the IT job market, I pursued a role in the BPO industry to
-          gain work experience.
+          During college, I built software and web applications using C++, Java, and PHP, gaining hands-on experience in programming. After graduating in 2019, I explored a career in the BPO industry, where I refined my communication and problem-solving skills. However, my passion for technology led me back to coding, and I dedicated myself to mastering JavaScript, modern frameworks, and full-stack development.
           <br />
           <br />
-          Over time, I realized that while the BPO industry honed my
-          communication and problem-solving skills, it didn’t align with my
-          passion for technology. Years passed, and I saw my technical knowledge
-          fade, but I also recognized that my potential remained untapped.
-          <br />
-          <br />
-          Determined to reclaim my passion, I began teaching myself JavaScript
-          and delved into modern frameworks. While self-study reignited my
-          technical skills, I’ve come to understand that true growth comes from
-          collaboration and real-world experience.
-          <br />
-          <br />
-          Today, I am eager to contribute to a team as a web developer,
-          leveraging my foundation in programming and my drive to learn. I am
-          ready to embrace new challenges, develop innovative solutions, and
-          grow alongside professionals in the field I love.
+          Now, I’m eager to apply my technical skills and collaborate with a team to build impactful solutions. I thrive in dynamic environments, embrace new challenges, and continuously seek growth as a developer.
         </p>
-        <button className="moreAboutMe--closeButton" onClick={hideAboutBox}>
-          Close
-        </button>
       </div>
     </div>
   );

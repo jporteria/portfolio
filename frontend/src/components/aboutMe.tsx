@@ -31,15 +31,11 @@ export default function AboutMe() {
         </div> */}
         <div className="summary">
           <p>
-            I am a dedicated Full Stack Developer with experience in both
-            front-end and back-end development. I have a passion for building
-            and optimizing websites that deliver excellent user experiences. I
-            take pride in my ability to learn new concepts quickly and work
-            collaboratively with others to achieve shared goals. I’m eager to
-            contribute my skills, creativity, and commitment to your development
-            team while continuing to grow and learn in a dynamic environment.
+          I am a dedicated Full Stack Developer with experience in both front-end and back-end development. Passionate about building and optimizing web applications, I thrive on creating seamless user experiences and solving real-world problems.
+          <br />
+          I take pride in my ability to learn quickly, adapt to new technologies, and collaborate effectively within a team. Eager to contribute my skills and creativity, I’m ready to grow in a dynamic development environment.
           </p>
-          <button className="more" onClick={showAboutBox}>
+          <button className="more" onClick={showAboutBox} onBlur={() => setAboutBox(false)}>
             More about me
           </button>
         </div>

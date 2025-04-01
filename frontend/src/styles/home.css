@@ -70,7 +70,7 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    align-items: end;
+    align-items: center;
     justify-content: center;
     /* border: 1px solid red; */
     /* background-color: var(--secondary); */
@@ -81,13 +81,13 @@
     height: auto;
     width: auto;
     /* border: 1px solid red; */
-    padding: 0 30px;
+    padding: 50px 30px;
     position: absolute;
     align-items: center;
     justify-content: center;
     left: auto;
     z-index: 1;
-    top: 180px;
+    /* top: 150px; */
     gap: 20px;
   }
   .name {
