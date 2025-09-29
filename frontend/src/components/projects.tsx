@@ -23,7 +23,7 @@ The platform is deployed on Netlify with prerendering for optimized performance 
       image: "images/projects/samahang-plaridel.png",
       liveLink: "https://samahangplaridel.org/",
       githubLink: "",
-      description: `<a href="https://wewrite.blog/" target="_blank" rel="noopener noreferrer">Samahang Plaridel – Association of Philippine Journalists</a> is dedicated to upholding press freedom, promoting ethical journalism, and supporting media practitioners.
+      description: `<a href="https://samahangplaridel.org/" target="_blank" rel="noopener noreferrer">Samahang Plaridel – Association of Philippine Journalists</a> is dedicated to upholding press freedom, promoting ethical journalism, and supporting media practitioners.
       <br/><br/>
 I designed and developed the website from scratch using WordPress with the Astra theme, Elementor for flexible page building, and Yoast SEO for search engine optimization. The site features a responsive design for both mobile and web, ensuring accessibility, fast performance, and a professional platform to showcase the association’s events, press releases, and advocacies.`,
     },
