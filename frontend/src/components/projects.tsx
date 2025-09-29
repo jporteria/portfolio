@@ -19,20 +19,27 @@ export default function Projects() {
 The platform is deployed on Netlify with prerendering for optimized performance and SEO. It also features a custom domain, ensuring a professional and branded online presence.`,
     },
     {
+      title: "Samahang Plaridel Website",
+      image: "images/projects/samahang-plaridel.png",
+      liveLink: "https://samahangplaridel.org/",
+      githubLink: "",
+      description: `<a href="https://wewrite.blog/" target="_blank" rel="noopener noreferrer">Samahang Plaridel – Association of Philippine Journalists</a> is dedicated to upholding press freedom, promoting ethical journalism, and supporting media practitioners.
+      <br/><br/>
+I designed and developed the website from scratch using WordPress with the Astra theme, Elementor for flexible page building, and Yoast SEO for search engine optimization. The site features a responsive design for both mobile and web, ensuring accessibility, fast performance, and a professional platform to showcase the association’s events, press releases, and advocacies.`,
+    },
+    {
       title: "SideNote",
       image: "images/projects/sidenote.png",
       liveLink: "https://sidenote.onrender.com/",
       githubLink: "https://github.com/jporteria/SideNote-web",
-      description:
-         `<a href="https://sidenote.onrender.com/" target="_blank" rel="noopener noreferrer">SideNote</a> is a note-taking web application designed to provide a seamless experience for users who want to take notes without leaving the browser. Originally built as a Chrome extension, it was transitioned to a web-based application due to Manifest V3 restrictions. The app is powered by React.js for the frontend and Firebase for authentication and real-time data synchronization.`,
+      description: `<a href="https://sidenote.onrender.com/" target="_blank" rel="noopener noreferrer">SideNote</a> is a note-taking web application designed to provide a seamless experience for users who want to take notes without leaving the browser. Originally built as a Chrome extension, it was transitioned to a web-based application due to Manifest V3 restrictions. The app is powered by React.js for the frontend and Firebase for authentication and real-time data synchronization.`,
     },
     {
       title: "NetPlease",
       image: "images/projects/netplease.png",
       liveLink: "https://netplease.onrender.com/",
       githubLink: "https://github.com/wagako3/netplease",
-      description:
-        `<a href="https://netplease.onrender.com/" target="_blank" rel="noopener noreferrer">NetPlease</a> is a movie rating website that allows users to discover, rate, and review movies. Built using the MERN stack and powered by the TMDb movie API, it provides an interactive platform for movie enthusiasts to explore a vast collection of films, share their opinions, and engage with a community of like-minded users.`,
+      description: `<a href="https://netplease.onrender.com/" target="_blank" rel="noopener noreferrer">NetPlease</a> is a movie rating website that allows users to discover, rate, and review movies. Built using the MERN stack and powered by the TMDb movie API, it provides an interactive platform for movie enthusiasts to explore a vast collection of films, share their opinions, and engage with a community of like-minded users.`,
     },
     {
       title: "GiftLink",
