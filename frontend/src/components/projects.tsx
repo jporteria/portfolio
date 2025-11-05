@@ -10,6 +10,15 @@ export default function Projects() {
 
   const projects = [
     {
+      title: "Math Problem Generator",
+      image: "images/projects/MathProblemGenerator.gif",
+      liveLink: "https://math-problem-generator-beta.vercel.app/",
+      githubLink: "",
+      description: `<a href="https://math-problem-generator-beta.vercel.app/" target="_blank" rel="noopener noreferrer">Math Problem Generator</a> is an AI-powered web application that automatically generates Primary 5–level math word problems and provides personalized feedback using Google’s Gemini AI. Built with Next.js 14 (TypeScript), Tailwind CSS, and Supabase, the app stores problems, user submissions, and scores in a real-time database.
+<br/><br/>
+It features difficulty levels, hints, step-by-step solutions, score tracking, and a leaderboard, making learning interactive and fun. The app also includes error resilience, responsive design, and pre-generated AI hints to ensure fast performance even during API downtime.`,
+    },
+    {
       title: "WeWrite",
       image: "images/projects/wewrite.png",
       liveLink: "https://wewrite.blog",
@@ -23,7 +32,7 @@ The platform is deployed on Netlify with prerendering for optimized performance 
       image: "images/projects/samahang-plaridel.png",
       liveLink: "https://samahangplaridel.org/",
       githubLink: "",
-      description: `<a href="https://samahangplaridel.org/" target="_blank" rel="noopener noreferrer">Samahang Plaridel – Association of Philippine Journalists</a> is dedicated to upholding press freedom, promoting ethical journalism, and supporting media practitioners.
+      description: `<a href="https://samahangplaridel.org/a" target="_blank" rel="noopener noreferrer">Samahang Plaridel – Association of Philippine Journalists</a> is dedicated to upholding press freedom, promoting ethical journalism, and supporting media practitioners.
       <br/><br/>
 I designed and developed the website from scratch using WordPress with the Astra theme, Elementor for flexible page building, and Yoast SEO for search engine optimization. The site features a responsive design for both mobile and web, ensuring accessibility, fast performance, and a professional platform to showcase the association’s events, press releases, and advocacies.`,
     },
